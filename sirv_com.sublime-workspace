@@ -1,0 +1,1066 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"list-g",
+				"list-group"
+			],
+			[
+				"side",
+				"sidebar__nav__menu"
+			],
+			[
+				"over",
+				"overflow-y"
+			],
+			[
+				"has",
+				"has-sidebar--min"
+			],
+			[
+				"tog",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"icon",
+				"iconModeSwitcher"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"bor",
+				"borderGrey"
+			],
+			[
+				"bo",
+				"borderGrey"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"spa",
+				"space-between"
+			],
+			[
+				"content",
+				"contentArea"
+			],
+			[
+				"flex",
+				"flex-direction"
+			],
+			[
+				"border",
+				"borderGrey"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"pa",
+				"padding-left"
+			],
+			[
+				"mw",
+				"max-width"
+			],
+			[
+				"ma",
+				"maw	max-width"
+			],
+			[
+				"bdrz",
+				"bdrz	border-radius"
+			],
+			[
+				"list-",
+				"list-group"
+			],
+			[
+				"list-grou",
+				"list-group-item"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"text",
+				"text-overflow"
+			],
+			[
+				"main",
+				"main-nav"
+			],
+			[
+				"add",
+				"addClass	.addClass()"
+			],
+			[
+				"profile",
+				"profile__update"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"c-in",
+				"c-indicator"
+			],
+			[
+				"pef",
+				"perfectScrollbar"
+			],
+			[
+				"remove",
+				"removeClass	.removeClass()"
+			],
+			[
+				"bp",
+				"bgp	background-position"
+			],
+			[
+				"bdr",
+				"bdr	border-right"
+			],
+			[
+				"align",
+				"align-items"
+			],
+			[
+				"contact-us",
+				"contact-us__head"
+			],
+			[
+				"contact",
+				"contact-us__head"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"c",
+				"center"
+			],
+			[
+				"tra",
+				"transparent"
+			],
+			[
+				"trasf",
+				"transform"
+			],
+			[
+				"aling",
+				"align-items"
+			],
+			[
+				"pos",
+				"position"
+			],
+			[
+				"alig",
+				"align-items"
+			],
+			[
+				"toggle",
+				"toggleClass	.toggleClass()"
+			],
+			[
+				"grid",
+				"gridContent"
+			],
+			[
+				"table",
+				"tableContent"
+			],
+			[
+				"switch",
+				"switchView"
+			],
+			[
+				"arra",
+				"array"
+			],
+			[
+				"post",
+				"post_images"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"wid",
+				"width	.width()"
+			],
+			[
+				"rea",
+				"ready	$(document).ready"
+			],
+			[
+				"info",
+				"info-sb-hide__text"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"tri",
+				"trigger	.trigger()"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"preg",
+				"preg_match"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"fon",
+				"font-family"
+			],
+			[
+				"no-",
+				"no-repeat"
+			],
+			[
+				"cur",
+				"cursor"
+			],
+			[
+				"scroll",
+				"scrollTop	.scrollTop()"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"php",
+				"php"
+			],
+			[
+				"lef",
+				"left-block"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"nav",
+				"navActive"
+			],
+			[
+				"fun",
+				"fun	Function"
+			],
+			[
+				"show",
+				"show	.show()"
+			],
+			[
+				"sho",
+				"showModal"
+			],
+			[
+				"errr",
+				"errorMessages"
+			],
+			[
+				"on",
+				"onclick	Attr"
+			],
+			[
+				"conta",
+				"contacts"
+			],
+			[
+				"w",
+				"w_h"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"margin-t",
+				"margin-right"
+			],
+			[
+				"fo",
+				"forEach"
+			],
+			[
+				"load",
+				"loadChatUrl"
+			],
+			[
+				"$sta",
+				"$stateParams"
+			],
+			[
+				"lo",
+				"loadContacts"
+			],
+			[
+				"cont",
+				"contacts"
+			],
+			[
+				"con",
+				"ContactService"
+			],
+			[
+				"cli",
+				"click"
+			],
+			[
+				"login",
+				"login-close"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"bord",
+				"border-bottom"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"ali",
+				"align-items"
+			],
+			[
+				"conte",
+				"justify-content"
+			],
+			[
+				"$inte",
+				"$interval	AngularJS"
+			],
+			[
+				"loa",
+				"loadInboxUrl"
+			],
+			[
+				"Lo",
+				"loadInbox"
+			],
+			[
+				"l",
+				"loadInbox"
+			],
+			[
+				"$roo",
+				"$rootScope	AngularJS"
+			],
+			[
+				"ng-r",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"ngin",
+				"ng-init	AngularJS"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"paddi",
+				"padding"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
+				"box",
+				"box-sizing"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"po",
+				"position"
+			],
+			[
+				"ri",
+				"right"
+			],
+			[
+				"bdtr",
+				"bdtrrz	border-top-right-radius"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pho",
+				"photo"
+			],
+			[
+				"ph",
+				"photo"
+			],
+			[
+				"de",
+				"delaied_images"
+			],
+			[
+				"res",
+				"resource"
+			],
+			[
+				"re",
+				"resource"
+			],
+			[
+				"par",
+				"parsedUrl"
+			],
+			[
+				"ou",
+				"outStream"
+			],
+			[
+				"cre",
+				"createServer"
+			],
+			[
+				"se",
+				"server"
+			],
+			[
+				"col",
+				"collecting_data"
+			],
+			[
+				"log",
+				"logMyData"
+			],
+			[
+				"fro",
+				"for	for (…) {…}"
+			],
+			[
+				"url",
+				"url_1"
+			],
+			[
+				"un",
+				"undefined"
+			],
+			[
+				"new",
+				"new_data"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"file",
+				"fileExt"
+			],
+			[
+				"filte",
+				"filterByExtention"
+			],
+			[
+				"fil",
+				"filterFiles"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "readme.md",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  👉 Version 2.0.1 👈\n  ********************************************************************************\n  \n  🏮 UI THEME\n  \n    ➼ Minor fix to contrast mode setting to make consistency with new addon Material Theme Appbar\n    ➼ New indigo accent color ( material_theme_accent_indigo\": true )\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  🎉🎉🎉🎉🎉\n  Happy 5K stars and 90K installations!! I love you all! ( except those who open issues without first reading the readme file )\n  🎉🎉🎉🎉🎉\n  \n  \n  👉 Version 2.0.0 👈\n  ********************************************************************************\n  🏮 UI THEME\n  \n    ➼ Increase sidebar spacing and add new setting to enable old compact sidebar ( \"material_theme_compact_sidebar\": true )\n    ➼ Update some filetype icons\n    ➼ Fixed blade icon not showing after the latest updates\n  \n  🏮 COLOR SCHEME️\n  \n    ➼ Oldest color scheme will now be available under OLD folder ( Packages/Material Theme/schemes/OLD/Material-Theme-*.tmTheme )\n    ➼ Sass & SCSS lang files removed to avoid issues with the main packages.\n  \n  🏮 CORE\n  \n    ➼ Add a gulp/js compiler to the main theme structure. Now we have to edit source (./src) files and compile by run `$ npm install` and then `$ gulp`\n",
+			"settings":
+			{
+				"buffer_size": 1449,
+				"line_ending": "Windows",
+				"name": "Package Control Messages",
+				"read_only": true,
+				"scratch": true
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 354.0,
+		"last_filter": "p",
+		"selected_items":
+		[
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"PAC",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"About"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 414.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) ",
+			"import urllib.request,os,hashlib; h = 'eb2297e1a458f27d836c04bb0cbaf282' + 'd0e7a3098092775ccb37ca9d6b2e4b7d'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/E/WORK/SIRV/sirv_com"
+	],
+	"file_history":
+	[
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/buttons.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/sidebar--animated-menu.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/sidebar.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_body.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_buttons.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_storage-used.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/layout.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Build/assets/scripts/scripts.js",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_sidebar.sass",
+		"/E/WORK/SIRV/Sirv_Ui/files--another-sidebar.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/layout--no-sidebar.jade",
+		"/E/WORK/SIRV/Sirv_Ui/files.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_profile.sass",
+		"/E/WORK/SIRV/Sirv_Ui/components.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_billing.sass",
+		"/E/WORK/SIRV/Sirv_Ui/billing.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_contact-us.sass",
+		"/E/WORK/SIRV/Sirv_Ui/contact-us.jade",
+		"/E/WORK/SIRV/Sirv_Ui/notifications.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_notifications.sass",
+		"/E/WORK/SIRV/Sirv_Ui/profile.jade",
+		"/E/WORK/SIRV/Sirv_Ui/modals.jade",
+		"/E/WORK/SIRV/Sirv_Ui/files--popups.jade",
+		"/E/WORK/SIRV/Sirv_Ui/files--warning.jade",
+		"/E/WORK/SIRV/Sirv_Ui/fullsize.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_header.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_embed.sass",
+		"/E/WORK/SIRV/Sirv_Ui/embed.jade",
+		"/E/WORK/SIRV/Sirv_Ui/signup.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Build/files.html",
+		"/C/Users/User/Desktop/youtube/YouTube.html",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_files.sass",
+		"/E/WORK/SIRV/Sirv_Ui/signup--recent.jade",
+		"/E/WORK/SIRV/Sirv_Ui/signup--collaborate.jade",
+		"/E/WORK/SIRV/Sirv_Ui/signup--password.jade",
+		"/E/WORK/SIRV/Sirv_Ui/signup--accounts.jade",
+		"/E/WORK/SIRV/Sirv_Ui/signup--login.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_tile-item.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_content-wrapper.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_title-section.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_signup.sass",
+		"/E/WORK/SIRV/Sirv_Ui/index.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/file.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/header.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Build/assets/css/main.min.css",
+		"/E/WORK/SIRV/Sirv_Ui/signup--trial.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/authentication/form.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/head.jade",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/1-tools/_vars.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/main.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/1-tools/_icons.sass",
+		"/E/freelance/rabota_ua/new_lp/html/index.html",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/styles.css",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/page-256.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/page-10817.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/page-10798.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/ideal-2016-styles.css",
+		"/E/freelance/rabota_ua/new_lp/html/style.css",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-notifications.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_custom-forms.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_utilities.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popups/popup.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popups/popup--uploads.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_context-menu.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_utilities.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popups/popup--directory.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_media.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popups/popup--file-operation.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/logo.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/image.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/folder.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/header--message.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popups",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/popup-notifications.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/messanger.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Gruntfile.js",
+		"/E/WORK/SIRV/Sirv_Ui/node_modules/bootstrap/dist/css/bootstrap.css",
+		"/E/WORK/SIRV/Sirv_Ui/package.json",
+		"/E/WORK/SIRV/bootstrap-custom-build/bootstrap/Gruntfile.js",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_grid.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/context-menu.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/spin.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_modals.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_nav.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_variables.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_input-group.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_forms.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/sirv-theme.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/scripts.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/bootstrap.sass",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/functions.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/rss-ukr.net.php",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/rss-yandx.php",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/forms.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/embed/options-form.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/bootstrap.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_list-group.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_tables.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/embed/figure.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/nav-tabs.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/tabels.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/items-table-view.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/dropdowns.jade",
+		"/E/WORK/SIRV/Sirv_Ui/popups.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/button-dropdown.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/modals.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_inputs.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_button-group.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/components/button-group.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_buttons.scss",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-account-switcher.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_account-switcher.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/accounts-modal.jade",
+		"/E/WORK/SIRV/new_bootstrap/bootstrap/Gemfile.txt",
+		"/E/WORK/SIRV/new_bootstrap/bootstrap/Gemfile.lock",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/modals.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_fullsize.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-move-item.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-delete.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-rename-item.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_sidebar-profile-popup.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/profile-popup.jade",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/popup__profile.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_form-label.sass",
+		"/E/WORK/SIRV/Sirv_Ui/src",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_search-form.sass",
+		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_breadcrumb.scss"
+	],
+	"find":
+	{
+		"height": 70.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"collapse",
+			"icon",
+			";",
+			"collapse-more-links-btn",
+			"sidebar",
+			"sidebarCollapseNav",
+			"sidebarCollapseBtn",
+			"mobileModeSwitcher",
+			"collapse-more-links-btn",
+			"list",
+			"                        .col-lg-6\n                            h2 What’s an “active project”?\n                            p\n                                | Active projects are defined as projects you are currently working on. If you aren’t working on a project, you can archive it and it won’t be counted against your total. For example, you could be on the $20/ month plan which allows you to run up to 10 active projects at once, but you could have another dozen archived projects and still be OK. Technically you could have hundreds of archived projects and still fit on the $20/month plan as long as you have no more than 10 active projects.    \n                        .col-lg-6\n                            h2 What’s an “active project”?\n                            p\n                                | Active projects are defined as projects you are currently working on. If you aren’t working on a project, you can archive it and it won’t be counted against your total. For example, you could be on the $20/ month plan which allows you to run up to 10 active projects at once, but you could have another dozen archived projects and still be OK. Technically you could have hundreds of archived projects and still fit on the $20/month plan as long as you have no more than 10 active projects.    \n",
+			"                        .col-lg-6\n                            h2 What’s an “active project”?\n                            p\n                                | Active projects are defined as projects you are currently working on. If you aren’t working on a project, you can archive it and it won’t be counted against your total. For example, you could be on the $20/ month plan which allows you to run up to 10 active projects at once, but you could have another dozen archived projects and still be OK. Technically you could have hundreds of archived projects and still fit on the $20/month plan as long as you have no more than 10 active projects.    \n                        .col-lg-6\n                            h2 What’s an “active project”?\n                            p\n                                | Active projects are defined as projects you are currently working on. If you aren’t working on a project, you can archive it and it won’t be counted against your total. For example, you could be on the $20/ month plan which allows you to run up to 10 active projects at once, but you could have another dozen archived projects and still be OK. Technically you could have hundreds of archived projects and still fit on the $20/month plan as long as you have no more than 10 active projects.    \n\n",
+			"border",
+			"focus",
+			"strong",
+			"index.html",
+			"0.4",
+			"0.6",
+			";",
+			"flex",
+			".message-item",
+			"sas",
+			"sass",
+			"tale",
+			"addon",
+			"control-sm",
+			".form-control",
+			"console",
+			"tr",
+			"image/svg",
+			"form-control-validation",
+			"has-success",
+			"5c",
+			"84c6ff",
+			"radio",
+			"input[type=\"checkbox\"]:checked + span",
+			"indicator",
+			".c-indicator",
+			"input[type=\"checkbox\"] + span",
+			"subscriptions",
+			"btn-group-lg",
+			"color",
+			"success",
+			"warning",
+			":hover",
+			"@import '3-modules/title-section'\n",
+			"info",
+			".account-switcher",
+			"collapseSettings",
+			"grey",
+			"f7fafc",
+			"select",
+			"copy",
+			"outside-link",
+			"/assets",
+			";",
+			"form-group",
+			"color",
+			"$gray",
+			"figure-caption",
+			"8f9294",
+			";",
+			"}",
+			"{",
+			"switch",
+			"lable",
+			"grid-column-float-xs",
+			"%grid-column-float-xs",
+			"для",
+			"для для",
+			"link",
+			"url",
+			"id",
+			"all_images",
+			"post_thumbnail",
+			"$post_images",
+			"rss_enclosure",
+			"buildMenu",
+			"addContext",
+			"init",
+			"buildMenu",
+			"data",
+			"text",
+			"feed",
+			"$post_images",
+			"share",
+			"usage",
+			"input",
+			"padding",
+			"$border-radius",
+			"$gray-lighter",
+			"$spacer-y",
+			"$spacer",
+			"$",
+			"$\\\\\\",
+			"color",
+			"text",
+			"$border-width",
+			"control",
+			"form-control",
+			"0.0625rem",
+			"border",
+			";\")",
+			"#f7f7f9",
+			"grid-column-float",
+			"extend",
+			"grid-column-float-xs",
+			"%grid-column-float-xs",
+			"glyphicon",
+			"icon",
+			"font",
+			"flex",
+			"\"assets",
+			"/assets",
+			"sbRightCollapse",
+			"info",
+			"\"assets",
+			"/assets",
+			"assets",
+			"/assets",
+			"menuIcon",
+			"assets",
+			"/assets",
+			"img",
+			"barrington",
+			"account",
+			";",
+			"collapseBtn"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			"0.5",
+			"0.4",
+			"",
+			".popup-item",
+			"tile",
+			"assets",
+			"",
+			"\"<?php echo bloginfo('template_url'); ?>/assets",
+			"<?php echo bloginfo('template_url'); ?>/assets",
+			"\"<?php echo bloginfo('template_url'); ?>/assets",
+			"<?php echo bloginfo('template_url'); ?>/assets",
+			"..",
+			"sirvIcon",
+			"..",
+			"assets",
+			"account",
+			"accounts",
+			"",
+			"week",
+			"month",
+			"year",
+			"12",
+			"$green",
+			"content",
+			"",
+			"design",
+			"dv__nav",
+			"archibonus.com",
+			"assets",
+			"<?php echo bloginfo('template_url'); ?>/assets"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "readme.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								274
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1449,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1449,
+								1449
+							]
+						],
+						"settings":
+						{
+							"auto_indent": false,
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"tab_width": 2,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 65.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sirv_com.sublime-project",
+	"replace":
+	{
+		"height": 114.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 239.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
