@@ -1,2 +1,4 @@
 *.sublime-project
 readme.md
+node_modules
+.sass-cache

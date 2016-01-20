@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"border",
+				"border-grey"
+			],
+			[
+				"text",
+				"text-decoration-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
 				"list-g",
 				"list-group"
 			],
@@ -56,10 +68,6 @@
 				"flex-direction"
 			],
 			[
-				"border",
-				"borderGrey"
-			],
-			[
 				"marg",
 				"margin-bottom"
 			],
@@ -92,10 +100,6 @@
 				"nowrap"
 			],
 			[
-				"text",
-				"text-overflow"
-			],
-			[
 				"main",
 				"main-nav"
 			],
@@ -106,10 +110,6 @@
 			[
 				"profile",
 				"profile__update"
-			],
-			[
-				"back",
-				"background-color"
 			],
 			[
 				"c-in",
@@ -520,22 +520,102 @@
 	"buffers":
 	[
 		{
-			"file": "readme.md",
+			"file": "styles/bootstrap/_variables.sass",
 			"settings":
 			{
-				"buffer_size": 274,
+				"buffer_size": 30745,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "Package Control Messages\n========================\n\nMaterial Theme\n--------------\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  👉 Version 2.0.1 👈\n  ********************************************************************************\n  \n  🏮 UI THEME\n  \n    ➼ Minor fix to contrast mode setting to make consistency with new addon Material Theme Appbar\n    ➼ New indigo accent color ( material_theme_accent_indigo\": true )\n\n  Material Theme for Sublime Text 3\n  https://github.com/equinusocio/material-theme\n  \n  🎉🎉🎉🎉🎉\n  Happy 5K stars and 90K installations!! I love you all! ( except those who open issues without first reading the readme file )\n  🎉🎉🎉🎉🎉\n  \n  \n  👉 Version 2.0.0 👈\n  ********************************************************************************\n  🏮 UI THEME\n  \n    ➼ Increase sidebar spacing and add new setting to enable old compact sidebar ( \"material_theme_compact_sidebar\": true )\n    ➼ Update some filetype icons\n    ➼ Fixed blade icon not showing after the latest updates\n  \n  🏮 COLOR SCHEME️\n  \n    ➼ Oldest color scheme will now be available under OLD folder ( Packages/Material Theme/schemes/OLD/Material-Theme-*.tmTheme )\n    ➼ Sass & SCSS lang files removed to avoid issues with the main packages.\n  \n  🏮 CORE\n  \n    ➼ Add a gulp/js compiler to the main theme structure. Now we have to edit source (./src) files and compile by run `$ npm install` and then `$ gulp`\n",
+			"file": "styles/sass/2-modules/_title-section.sass",
 			"settings":
 			{
-				"buffer_size": 1449,
-				"line_ending": "Windows",
-				"name": "Package Control Messages",
-				"read_only": true,
-				"scratch": true
+				"buffer_size": 618,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/sass/2-modules/_footer.sass",
+			"settings":
+			{
+				"buffer_size": 81,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/sass/2-modules/_partners.sass",
+			"settings":
+			{
+				"buffer_size": 559,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": ".color-accent\n  color: $blue\n\n.section-padding\n  padding: 2.8em 0 4.8em",
+			"file": "styles/sass/0-tools/_utilities.sass",
+			"file_size": 75,
+			"file_write_time": 130975923536023076,
+			"settings":
+			{
+				"buffer_size": 71,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "build/assets/styles/bootstrap.css",
+			"settings":
+			{
+				"buffer_size": 148732,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/sass/0-tools/_variables.sass",
+			"settings":
+			{
+				"buffer_size": 178,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/pages/landing-page.jade",
+			"settings":
+			{
+				"buffer_size": 239,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/modules/footer.jade",
+			"settings":
+			{
+				"buffer_size": 225,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/bootstrap.sass",
+			"settings":
+			{
+				"buffer_size": 3485,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "views/layout.jade",
+			"settings":
+			{
+				"buffer_size": 155,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "styles/main.sass",
+			"settings":
+			{
+				"buffer_size": 420,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -589,10 +669,77 @@
 	},
 	"expanded_folders":
 	[
-		"/E/WORK/SIRV/sirv_com"
+		"/E/WORK/SIRV/sirv_com",
+		"/E/WORK/SIRV/sirv_com/build/assets/styles",
+		"/E/WORK/SIRV/sirv_com/scripts",
+		"/E/WORK/SIRV/sirv_com/styles",
+		"/E/WORK/SIRV/sirv_com/styles/bootstrap",
+		"/E/WORK/SIRV/sirv_com/styles/sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/0-tools",
+		"/E/WORK/SIRV/sirv_com/styles/sass/1-base",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules",
+		"/E/WORK/SIRV/sirv_com/styles/sass/3-pages",
+		"/E/WORK/SIRV/sirv_com/views/modules",
+		"/E/WORK/SIRV/sirv_com/views/pages"
 	],
 	"file_history":
 	[
+		"/E/WORK/SIRV/sirv_com/views/modules/title-section.jade",
+		"/E/WORK/SIRV/sirv_com/views/modules/partners.jade",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_cta.sass",
+		"/E/WORK/SIRV/sirv_com/views/modules/features.jade",
+		"/E/WORK/SIRV/sirv_com/styles/sass/1-base/_body.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_features.sass",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/style.css",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/global_styles/global.less",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/house.jade",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/person.jade",
+		"/E/WORK/SIRV/sirv_com/views/modules/cta.jade",
+		"/E/WORK/SIRV/sirv_com/styles/main.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_title-section.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_partners.sass",
+		"/C/Users/User/AppData/Local/Temp/fz3temp-1/wp-config.php",
+		"/E/WORK/SIRV/sirv_com/styles/sass/0-tools/_variables.sass",
+		"/E/WORK/SIRV/sirv_com/styles/bootstrap/_buttons.sass",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/06.html",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/05.html",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/rocket.jade",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/graph.jade",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/04.html",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/bage.jade",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/03.html",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/lock.jade",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/02.html",
+		"/E/WORK/SIRV/sirv_com/views/modules/icons/program.jade",
+		"/E/Dropbox/PSDS/sirv.com/enterprise Jade - Less/img/about/01.html",
+		"/E/WORK/SIRV/sirv_com/node_modules/bootstrap-sass/assets/stylesheets/bootstrap/_buttons.scss",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_top-banner.sass",
+		"/E/WORK/SIRV/sirv_com/build/assets/styles/main.css",
+		"/E/WORK/SIRV/sirv_com/views/pages/landing-page.jade",
+		"/E/WORK/SIRV/sirv_com/views/modules/top-banner.jade",
+		"/E/WORK/SIRV/sirv_com/styles/sass/1-base/_typography.sass",
+		"/E/WORK/SIRV/sirv_com/styles/bootstrap.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/2-modules/_header.sass",
+		"/E/WORK/SIRV/sirv_com/styles/bootstrap/_navbar.sass",
+		"/E/WORK/SIRV/sirv_com/views/structure/header.jade",
+		"/E/WORK/SIRV/sirv_com/styles/sass/0-tools/variables.sass",
+		"/E/WORK/SIRV/sirv_com/build/index.html",
+		"/E/WORK/SIRV/sirv_com/views/structure/head.jade",
+		"/E/WORK/SIRV/sirv_com/styles/bootstrap/_bootstrap-variables.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/0-tools/_font.sass",
+		"/E/WORK/SIRV/sirv_com/styles/sass/1-base/body.sass",
+		"/E/WORK/SIRV/sirv_com/gulpfile.js",
+		"/E/WORK/SIRV/sirv_com/index.jade",
+		"/E/WORK/SIRV/sirv_com/views/structure/scripts.jade",
+		"/E/WORK/SIRV/sirv_com/styles/sass/another.sass",
+		"/E/WORK/SIRV/sirv_com/build/front-page.html",
+		"/E/WORK/SIRV/sirv_com/views/layout.jade",
+		"/E/WORK/SIRV/sirv_com/build/styles/main.css",
+		"/E/WORK/SIRV/sirv_com/styles/main.scss",
+		"/E/WORK/SIRV/sirv_com/build/assets/styles/bootstrap.css",
+		"/E/WORK/SIRV/sirv_com/build/assets",
+		"/E/WORK/SIRV/sirv_com/.gitignore",
+		"/E/WORK/SIRV/sirv_com/readme.md",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/components/buttons.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/sidebar--animated-menu.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/sidebar.jade",
@@ -641,7 +788,6 @@
 		"/E/WORK/SIRV/Sirv_Ui/signup--trial.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/authentication/form.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/head.jade",
-		"/C/Users/User/AppData/Local/Temp/fz3temp-1/wp-config.php",
 		"/E/WORK/SIRV/Sirv_Ui/Sass/1-tools/_vars.sass",
 		"/E/WORK/SIRV/Sirv_Ui/Sass/main.sass",
 		"/E/WORK/SIRV/Sirv_Ui/Sass/1-tools/_icons.sass",
@@ -665,62 +811,7 @@
 		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/logo.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/image.jade",
 		"/E/WORK/SIRV/Sirv_Ui/Templates/folder.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/header--message.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/popups",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/popup-notifications.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/messanger.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Gruntfile.js",
-		"/E/WORK/SIRV/Sirv_Ui/node_modules/bootstrap/dist/css/bootstrap.css",
-		"/E/WORK/SIRV/Sirv_Ui/package.json",
-		"/E/WORK/SIRV/bootstrap-custom-build/bootstrap/Gruntfile.js",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_grid.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/context-menu.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/spin.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_modals.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_nav.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_variables.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_input-group.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_forms.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/sirv-theme.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/scripts.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/bootstrap.sass",
-		"/C/Users/User/AppData/Local/Temp/fz3temp-1/functions.php",
-		"/C/Users/User/AppData/Local/Temp/fz3temp-1/rss-ukr.net.php",
-		"/C/Users/User/AppData/Local/Temp/fz3temp-1/rss-yandx.php",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/forms.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/embed/options-form.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/bootstrap.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_list-group.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_tables.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/embed/figure.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/nav-tabs.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/tabels.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/items-table-view.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/dropdowns.jade",
-		"/E/WORK/SIRV/Sirv_Ui/popups.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/button-dropdown.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/modals.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/2-base/_inputs.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_button-group.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/components/button-group.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_buttons.scss",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-account-switcher.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_account-switcher.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/accounts-modal.jade",
-		"/E/WORK/SIRV/new_bootstrap/bootstrap/Gemfile.txt",
-		"/E/WORK/SIRV/new_bootstrap/bootstrap/Gemfile.lock",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/modals.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/4-pages/_fullsize.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-move-item.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-delete.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_popup-rename-item.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_sidebar-profile-popup.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Templates/sidebar/profile-popup.jade",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/popup__profile.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_form-label.sass",
-		"/E/WORK/SIRV/Sirv_Ui/src",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/3-modules/_search-form.sass",
-		"/E/WORK/SIRV/Sirv_Ui/Sass/5-theme/_breadcrumb.scss"
+		"/E/WORK/SIRV/Sirv_Ui/Templates/structure/header--message.jade"
 	],
 	"find":
 	{
@@ -739,6 +830,33 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"nav-inline",
+			".nav-inline",
+			";",
+			"}",
+			"{",
+			"hv",
+			"separator",
+			"buttons",
+			"$border-radius-base",
+			"buttons",
+			"hover",
+			"button",
+			"outline",
+			"button",
+			";",
+			".navbar-toggle",
+			"navbar",
+			"toggle",
+			";",
+			"navbar-default-bg",
+			"default",
+			"nav",
+			"link(rel='stylesheet' href='assets/styles/main.css')\n",
+			";",
+			"#{$bootstrap-dir}",
+			";",
+			"\"bootstrap",
 			"collapse",
 			"icon",
 			";",
@@ -839,34 +957,7 @@
 			"$border-width",
 			"control",
 			"form-control",
-			"0.0625rem",
-			"border",
-			";\")",
-			"#f7f7f9",
-			"grid-column-float",
-			"extend",
-			"grid-column-float-xs",
-			"%grid-column-float-xs",
-			"glyphicon",
-			"icon",
-			"font",
-			"flex",
-			"\"assets",
-			"/assets",
-			"sbRightCollapse",
-			"info",
-			"\"assets",
-			"/assets",
-			"assets",
-			"/assets",
-			"menuIcon",
-			"assets",
-			"/assets",
-			"img",
-			"barrington",
-			"account",
-			";",
-			"collapseBtn"
+			"0.0625rem"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -874,6 +965,10 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"../node_modules/bootstrap-sass/assets/stylesheets/bootstrap",
+			"",
+			"\"#{$bootstrap-dir}",
 			"",
 			"0.5",
 			"0.4",
@@ -915,16 +1010,169 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "readme.md",
+					"file": "styles/bootstrap/_variables.sass",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 274,
+						"buffer_size": 30745,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6661,
+								6661
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 3112.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "styles/sass/2-modules/_title-section.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 618,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								228,
+								228
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "styles/sass/2-modules/_footer.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 81,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								38,
+								38
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "styles/sass/2-modules/_partners.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 559,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								423,
+								423
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "styles/sass/0-tools/_utilities.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 71,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								71,
+								71
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"open_with_edit": true,
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "build/assets/styles/bootstrap.css",
+					"semi_transient": true,
+					"settings":
+					{
+						"buffer_size": 148732,
 						"regions":
 						{
 						},
@@ -932,14 +1180,113 @@
 						[
 							[
 								0,
-								274
+								0
 							]
 						],
 						"settings":
 						{
-							"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 6,
+					"file": "styles/sass/0-tools/_variables.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								90,
+								90
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "views/pages/landing-page.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 239,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								239,
+								239
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "views/modules/footer.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 225,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								124,
+								124
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
 							"open_with_edit": true,
-							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -949,33 +1296,90 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"semi_transient": false,
+					"buffer": 9,
+					"file": "styles/bootstrap.sass",
+					"semi_transient": true,
 					"settings":
 					{
-						"buffer_size": 1449,
+						"buffer_size": 3485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1449,
-								1449
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"auto_indent": false,
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"tab_width": 2,
-							"word_wrap": true
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "views/layout.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 155,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								127,
+								127
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "styles/main.sass",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 420,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Material-Theme-Darker.tmTheme",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
 					"type": "text"
 				}
 			]
@@ -998,11 +1402,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.448535936113,
 			1.0
 		],
 		"rows":
@@ -1050,7 +1461,7 @@
 		],
 		"width": 0.0
 	},
-	"selected_group": 0,
+	"selected_group": 1,
 	"settings":
 	{
 	},

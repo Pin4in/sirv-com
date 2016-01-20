@@ -1,0 +1,57 @@
+.navigation
+  background: rgba(255,255,255,1)
+
+
+  &--transparent
+    background: rgba(255,255,255,0)
+    border-color: transparent
+    .navigation__menu
+      & > li > a
+        color: $white
+        &:hover,
+        &:focus 
+          color: darken(#fff, 10%)
+
+  &__auth
+    @media(max-width: 859px)
+      display: flex
+      margin-bottom: 1rem
+      justify-content: space-between
+      &.navbar-nav
+        &>li
+          a
+            border: .1428rem solid #535454
+            border-radius: 5px
+            text-decoration: none
+            width: 40vw
+            text-align: center
+    @media (min-width: 500px) and (max-width: 859px)
+      margin-top: 1rem
+
+    @media(min-width: 860px)
+      float: right
+      color: $text-grey
+      &.navbar-nav
+        &>li
+          a
+            color: $text-grey
+            border-width: 0
+            width: auto
+
+
+  &__menu
+
+    @media(min-width: 860px)
+      float: right
+      position: relative
+
+      &:after
+        content: ""
+        display: block
+        position: absolute
+        right: 0
+        height: 30px
+        top: 10px
+        width: 1px
+        background-color: #d9d9d9
+

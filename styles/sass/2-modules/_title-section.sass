@@ -1,0 +1,33 @@
+.title-section
+  @extend .section-padding
+  text-align: center
+
+  @media (min-width: 500px) and (max-width: 767px)
+    font-size: 16px
+  
+  &__heading
+    margin-bottom: 5rem
+
+    @media (min-width: 767px )
+      font-size: 4rem
+
+  &__graphic
+    margin-bottom: 3em
+    img
+      width: 20em
+      @media (min-width: 500px) and (max-width: 767px)
+        width: 28em
+      
+      @media (min-width: 767px)
+        width: 45em
+
+  &__text
+    margin-bottom: 3em
+    color: #65758a
+    font-weight: 300
+    font-size: 1.2em
+    @media (min-width: 767px)
+      width: 80%
+      margin-left: auto
+      margin-right: auto
+
