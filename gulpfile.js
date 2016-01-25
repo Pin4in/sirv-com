@@ -52,5 +52,5 @@ gulp.task('serve', ['dev-sass', 'jade'], function() {
   gulp.watch(['styles/sass/**/*.sass', 'styles/main.sass'] , ['dev-sass']);
   gulp.watch(['styles/bootstrap/*.sass', 'styles/bootstrap.sass'] , ['compile-bootstrap']);
   gulp.watch(['index.jade','views/**/*.jade'] , ['jade']);
-  gulp.watch(['*.html', 'scripts/**/*.js'] , {cwd: 'build'}, reload);
+  gulp.watch(['*.html', 'assets/scripts/**/*.js'] , {cwd: 'build'}, reload);
 });

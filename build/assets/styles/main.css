@@ -10,6 +10,7 @@
 html,
 body {
   height: 100%;
+  font-size: 14px;
 }
 
 body {
@@ -38,10 +39,14 @@ h1, h2, h3, h4, h4 {
 
 .navigation {
   background: white;
+  padding: 0 3rem;
+  border-color: transparent;
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
 }
 .navigation--transparent {
   background: rgba(255, 255, 255, 0);
-  border-color: transparent;
+  box-shadow: none;
 }
 .navigation--transparent .navigation__menu > li > a {
   color: #fff;
@@ -96,7 +101,7 @@ h1, h2, h3, h4, h4 {
   }
 }
 .top-banner {
-  height: 100vh;
+  height: 500px;
   background: url(../img/main_bg.jpg);
   background-attachment: fixed;
   background-size: cover;
@@ -106,20 +111,54 @@ h1, h2, h3, h4, h4 {
   text-align: center;
   color: #fff;
 }
-.top-banner-container {
-  padding: 4rem 1rem;
+@media(min-height: 600px) {
+  .top-banner {
+    height: 720px;
+  }
 }
-.top-banner__title {
-  margin-bottom: 5rem;
+.top-banner-container {
+  padding: 3rem 0.5rem 4rem;
+}
+@media(min-width: 768px) {
+  .top-banner-container {
+    padding-top: 10rem;
+  }
+}
+@media(min-width: 992px) {
+  .top-banner__title h1 {
+    font-size: 5rem;
+  }
 }
 .top-banner__subtitle {
-  font-size: 2rem;
-  margin-bottom: 7.5rem;
+  font-size: 1.6rem;
+  margin-bottom: 5.5rem;
+}
+@media(min-width: 768px) {
+  .top-banner__subtitle {
+    font-weight: 300;
+  }
+}
+.top-banner__actions {
+  font-size: 12px;
+}
+@media(min-width: 400px) {
+  .top-banner__actions {
+    font-size: 16px;
+  }
+}
+@media(min-width: 992px) {
+  .top-banner__actions {
+    font-size: 18px;
+  }
+  .top-banner__actions input.btn {
+    padding-top: 0.7em;
+    padding-bottom: 0.7em;
+  }
 }
 .top-banner__actions .btn {
-  margin-right: 1rem;
-  margin-left: 1rem;
-  padding: 1em 1.5em;
+  margin-right: 0.7rem;
+  margin-left: 0.7rem;
+  padding: 1em 2.5em;
 }
 
 .features {
