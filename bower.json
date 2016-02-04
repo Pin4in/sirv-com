@@ -1,0 +1,31 @@
+{
+  "name": "sirv-com-ui",
+  "description": "new ui for sirv.com",
+  "main": "gulpfile.js",
+  "authors": [
+    "Sergii Korkh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "jade",
+    "sass",
+    "jquery",
+    "bootstrap"
+  ],
+  "homepage": "https://github.com/Pin4in/sirv-com",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "twbs/bootstrap#v4-dev",
+    "highlightjs": "^9.1.0",
+    "font-awesome": "^4.5.0",
+    "zeroclipboard": "^2.2.0"
+  }
+}

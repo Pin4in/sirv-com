@@ -1,0 +1,43 @@
+.top-banner
+  height: 500px
+  @media(min-height: 600px)
+    height: 720px
+  background: url(/assets/img/main_bg.jpg)
+  background-attachment: fixed
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  padding-top: 51px
+  text-align: center
+  color: $white
+
+  &-container
+    padding: 3rem .5rem 4rem
+    @media(min-width: 768px)
+      padding-top: 10rem
+
+
+  &__title
+    h1
+      @media(min-width: 992px)
+        font-size: 5rem
+
+  &__subtitle
+    font-size: 1.6rem
+    margin-bottom: 5.5rem
+    @media(min-width: 768px)
+      font-weight: 300
+
+  &__actions
+    font-size: 12px
+    @media(min-width: 400px)
+      font-size: 16px
+    @media(min-width: 992px)
+      font-size: 18px
+      input.btn
+        padding-top: .7em
+        padding-bottom: .7em
+    .btn
+      margin-right: .7rem
+      margin-left: .7rem
+      padding: 1em 2.5em

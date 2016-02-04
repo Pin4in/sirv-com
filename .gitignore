@@ -1,4 +1,7 @@
+*.DS_Store
 *.sublime-project
-readme.md
-node_modules
+*.sublime-workspace
 .sass-cache
+node_modules/
+build/
+src/components/
