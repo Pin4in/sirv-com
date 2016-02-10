@@ -1,60 +1,105 @@
 .navigation
-  background: rgba(255,255,255,1)
-  padding: 0 3rem
-  border-color: transparent
-  box-shadow: 1px 5px 10px rgba(0, 0, 0, .1)
-  transition: all .5s ease-in-out
+    position: fixed
+    right: 0
+    left: 0
+    z-index: 1030
+    border-color: transparent
+    +transition(all, .4s)
+    border-radius: 0
 
 
-  &--transparent
-    background: rgba(255,255,255,0)
-    box-shadow: none
-    .navigation__menu
-      & > li > a
-        color: $white
-        &:hover,
-        &:focus
-          color: darken(#fff, 10%)
+    &-menu
+        +clearfix()
+        .navbar-nav
+            float: right
+            line-height: 42px
+            +clearfix
+            .nav-item
+                margin-left: 2rem
+                color: #fff
+        &.navigation-menu--mobile
+            left: 0
+        @media(max-width: #{map-get($grid-breakpoints, md)})
+            position: fixed
+            width: 70%
+            top: 0px
+            bottom: 0px
+            padding-top: 1rem
+            background: white
+            left: -70%
+            +transition(all,.4s)
 
-  &__auth
-    @media(max-width: 859px)
-      display: flex
-      margin-bottom: 1rem
-      justify-content: space-between
-      &.navbar-nav
-        &>li
-          a
-            border: .1428rem solid #535454
-            border-radius: 5px
-            text-decoration: none
-            width: 40vw
-            text-align: center
-    @media (min-width: 500px) and (max-width: 859px)
-      margin-top: 1rem
-
-    @media(min-width: 860px)
-      float: right
-      color: $text-grey
-      &.navbar-nav
-        &>li
-          a
-            color: $text-grey
-            border-width: 0
-            width: auto
+            .navbar-nav
+                padding-right: 1rem
+                padding-left: 2rem
+                .nav-item
+                    margin-left: 0
 
 
-  &__menu
 
-    @media(min-width: 860px)
-      float: right
-      position: relative
+    &__auth
+        a
+            color: $menu-text-dark
+        &.navbar-nav
+            @media(max-width: #{map-get($grid-breakpoints, md)})
+                display: block
+                float: none
+                .nav-item
+                    display: block
+                    float: none
 
-      &:after
-        content: ""
-        display: block
-        position: absolute
-        right: 0
-        height: 30px
-        top: 10px
-        width: 1px
-        background-color: #d9d9d9
+        .btn
+            color: white
+            vertical-align: baseline
+
+
+    &__menu
+        a
+            color: $menu-text-light
+
+        &.navbar-nav
+            @media(max-width: #{map-get($grid-breakpoints, md)})
+                display: block
+                float: none
+                border-top: 1px solid $border-grey
+                .nav-item
+                    display: block
+                    float: none
+                    a
+                        color: $menu-text-dark
+
+
+    .navbar-brand
+        float: left
+        @media(max-width: #{map-get($grid-breakpoints, md)})
+            width: 100%
+
+
+        .navbar-toggle
+            float: right
+            @media(min-width: #{map-get($grid-breakpoints, md)})
+                display: none
+
+
+    .navbar-container
+        padding-top: .8rem
+        max-width: map-get($container-max-widths, xl)
+        +transition(all, .4s)
+        +center-block()
+        +clearfix()
+
+
+    &.bg-white
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, .1)
+        .navbar-container
+            padding-top: 0
+
+    &.navbar-light
+        .navbar-nav
+            .nav-item
+                color: $menu-text-dark
+            a
+                color: $menu-text-dark
+        .navigation__auth
+            .btn
+                color: white

@@ -72,7 +72,8 @@ gulp.task('compile-jade', function(){
 gulp.task('concat-js', function() {
   return gulp.src('src/scripts/*.js')
     .pipe(concat('app.js'))
-    .pipe(gulp.dest('build/scripts'));
+    .pipe(gulp.dest('build/scripts'))
+    .pipe(reload({ stream:true }));
 });
 
 
@@ -111,8 +112,8 @@ gulp.task('serve', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', '
   });
 
   gulp.watch(['src/styles/sass/**/*.sass'] , ['compile-sass']);
-  gulp.watch(['src/styles/bootstrap-theme/*.sass'] , ['compile-bootstrap-theme']);
-  gulp.watch(['src/scripts/**/*.js'] , ['concat-js']);
+  gulp.watch(['src/styles/bootstrap-theme/*{.sass,.scss}'] , ['compile-bootstrap-theme']);
+  gulp.watch(['src/scripts/*.js'] , ['concat-js']);
   gulp.watch(['**/*.jade'] , ['compile-jade']);
-  gulp.watch(['*.html'] , {cwd: 'dist'}, reload);
+  gulp.watch(['*.html'] , {cwd: 'build'}, reload);
 });

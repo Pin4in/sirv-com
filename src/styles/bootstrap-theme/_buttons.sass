@@ -1,29 +1,61 @@
-// Button default style
-
-.btn
-  border: 1px solid transparent
-  padding: 1em 3em
-  font-size: 1em
-  line-height: 1.42857
-  border-radius: 2em
-  text-transform: uppercase
-  
-
-
+// // Button default style
 //
-// Buttons Outline
-// --------------------------------------------------
+// .btn
+//   border: 1px solid transparent
+//   padding: 1em 3em
+//   font-size: 1em
+//   line-height: 1.42857
+//   border-radius: 2em
+//   text-transform: uppercase
+//
+//
+//
+// //
+// // Buttons Outline
+// // --------------------------------------------------
+//
+// .btn-default-outline
+//   background-color: transparent
+//   border-color: #fff
+//   color: #fff
+//   &:hover,
+//   &:focus
+//     background-color: rgba(0,0,0,.1)
+//     color: #fff
+//
+// .btn-primary-outline
+//   background-color: transparent
+//   border-color: #3688b7
+//   color: #3688b7
 
-.btn-default-outline
-  background-color: transparent
-  border-color: #fff
-  color: #fff
-  &:hover,
-  &:focus 
-    background-color: rgba(0,0,0,.1)
-    color: #fff
 
-.btn-primary-outline
-  background-color: transparent
-  border-color: #3688b7
-  color: #3688b7
+
+.btn-outline-light
+    color: white
+    background-image: none
+    background-color: transparent
+    border-color: white
+
+    &:focus,
+    &.focus,
+    &:active,
+    &.active,
+    .open > &.dropdown-toggle
+        color: white
+        background-color: rgba(255,255,255, .2)
+        border-color: white
+
+    @include hover
+        color: white
+        background-color: rgba(255,255,255, .2)
+        border-color: white
+
+
+    &.disabled,
+    &:disabled
+        &:focus,
+        &.focus
+            border-color: lighten(white, 20%)
+
+        @include hover
+            border-color: lighten(white, 20%)
