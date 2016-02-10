@@ -3,5 +3,5 @@
 *.sublime-workspace
 .sass-cache
 node_modules/
-build/
+
 src/components/
