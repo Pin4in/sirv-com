@@ -1,14 +1,14 @@
-nav.navbar.navigation
+nav.navbar.main-nav.navbar-light
     .navbar-container
         //- Brand and toggle get grouped for better mobile display
         //- .navbar-header
-        .navbar-brand
+        .main-nav__brand
             button.navbar-toggle( type="button")
-                &#9776;
+                i.fa.fa-bars
             a(href='#')
                 include ../modules/logo
         //- Collect the nav links, forms, and other content for toggling
-        #menu.navigation-menu
+        #menu.navigation
             ul.nav.navbar-nav.navigation__auth
                 li.nav-item
                     a.btn.btn-primary(href='#') START NOW
@@ -32,41 +32,5 @@ nav.navbar.navigation
                     a(href='#') Help
                 li.nav-item
                     a(href='#') Contact
-                li.nav-item
+                li.nav-item.nav-item-separator
                     | |
-
-//- nav.navbar.navbar-default.navbar-fixed-top.navigation.navigation--transparent
-//-     //- Brand and toggle get grouped for better mobile display
-//-     .navbar-header
-//-         button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#menu', aria-expanded='false')
-//-             span.sr-only Toggle navigation
-//-             span.icon-bar
-//-             span.icon-bar
-//-             span.icon-bar
-//-     a.navbar-brand(href='#')
-//-         include ../modules/logo
-//-     //- Collect the nav links, forms, and other content for toggling
-//-     #menu.collapse.navbar-toggleable-md
-//-         ul.nav.navbar-nav.navigation__auth
-//-             li
-//-                 a(href='#') Sign up
-//-             li
-//-                 a(href='#') Log in
-//- 
-//-         ul.nav.navbar-nav.navigation__menu
-//-             li.active
-//-                 a(href='#')
-//-                     | Features 
-//-                     span.sr-only (current)
-//-             li
-//-                 a(href='#') Pricing
-//-             li
-//-                 a(href='#') Demos
-//-             li
-//-                 a(href='#') Partners
-//-             li
-//-                 a(href='#') Docs
-//-             li
-//-                 a(href='#') Help
-//-             li
-//-                 a(href='#') Contact

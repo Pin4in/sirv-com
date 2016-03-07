@@ -23,7 +23,7 @@
     "tests"
   ],
   "dependencies": {
-    "bootstrap": "twbs/bootstrap#v4-dev",
+    "bootstrap": "twbs/bootstrap#06ad50e26217dc0470f78bce8188e39c9e51b790",
     "highlightjs": "^9.1.0",
     "font-awesome": "^4.5.0",
     "zeroclipboard": "^2.2.0"

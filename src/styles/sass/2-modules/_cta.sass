@@ -1,3 +1,30 @@
 .cta
-	text-align: center
-	margin-bottom: 10rem
+    text-align: center
+    margin-bottom: 10rem
+    &-card
+        @include clearfix
+        @include shadow(0, .45rem, .6rem, 0, rgba(0,0,0,.3))
+        padding: 1.5rem
+        background: $background-grey
+        border: 1px solid $border-grey
+        &__container
+            display: flex
+            @media(max-width: #{map-get($grid-breakpoints, md)})
+                display: block
+        .card-title
+            color: $black
+            font-family: $opensans
+            font-size: 2.2rem
+            margin-bottom: 1.5rem
+        .card-text
+            color: $main-text-color
+            margin-right: 1.5rem
+            font-size: 1.1rem
+            span
+                display: block
+                margin-top: .25rem
+        .btn
+            padding: .75rem 1.5rem
+            align-self: center
+            border-radius: 1.5rem
+            font-size: 1.15rem

@@ -53,7 +53,7 @@ gulp.task('compile-sass', function() {
 
 // COMPILE bootstrap theme
 gulp.task('compile-bootstrap-theme', function() {
-  return sass('src/styles/bootstrap-theme/sirv-com-theme.sass',{ style: 'expanded' })
+  return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
     .pipe(gulp.dest('build/styles'))
     .pipe(reload({ stream:true }));
 });

@@ -15,8 +15,8 @@
             }
         }
 
-        var nav = $('.navigation');
-        var navClasses = 'navbar-light bg-white';
+        var nav = $('.main-nav');
+        var navClasses = 'bg-white';
 
         $(window).on('scroll' , function() {
 
@@ -33,8 +33,8 @@
         });
 
         var mobileMenuToggle = $('.navbar-toggle');
-        var menu = $('.navigation-menu')
-        var mobileMenuActiveClass = 'navigation-menu--mobile'
+        var menu = $('.navigation')
+        var mobileMenuActiveClass = 'navigation--mobile'
         $(mobileMenuToggle).on('click' , function() {
             classy.toggle($(menu), mobileMenuActiveClass)
         });
