@@ -43,7 +43,7 @@ $brand-danger:              #d9534f !default;
 //
 // Quickly modify global styling by enabling or disabling optional features.
 
-$enable-flex:               false !default;
+$enable-flex:               true !default;
 $enable-rounded:            true !default;
 $enable-shadows:            false !default;
 $enable-gradients:          false !default;
@@ -449,8 +449,8 @@ $navbar-dark-active-color:          rgba(255,255,255,1) !default;
 $navbar-dark-disabled-color:        rgba(255,255,255,.25) !default;
 
 $navbar-light-color:                rgba(0,0,0,.3) !default;
-$navbar-light-hover-color:          rgba(0,0,0,.6) !default;
-$navbar-light-active-color:         rgba(0,0,0,.8) !default;
+$navbar-light-hover-color:          rgba(#535454, 0.6) !default;
+$navbar-light-active-color:         #535454 !default;
 $navbar-light-disabled-color:       rgba(0,0,0,.15) !default;
 
 

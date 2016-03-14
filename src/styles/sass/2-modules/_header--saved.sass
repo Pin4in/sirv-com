@@ -1,0 +1,142 @@
+.main-nav
+    position: fixed
+    right: 0
+    left: 0
+    z-index: 1030
+    border-color: transparent
+    +transition(all, .4s)
+    border-radius: 0
+
+    &__brand
+        float: left
+        padding-top: 0.25rem
+        padding-bottom: 0.25rem
+        margin-right: 1rem
+        font-size: 1.25rem
+        @media(max-width: #{map-get($grid-breakpoints, lg)})
+            width: 100%
+            .navbar-toggle
+                border-color: $blue !important
+                color: $blue !important
+
+
+        .navbar-toggle
+            float: right
+            background: transparent
+            border: 1px solid white
+            color: white
+            border-radius: .5rem
+            padding: .2rem .7rem
+            font-size: 1.3rem
+            outline: none !important
+            @media(min-width: #{map-get($grid-breakpoints, lg)})
+                display: none
+
+            &:hover
+                background-color: rgba(255,255,255,.2)
+
+
+    &-container
+        padding-top: .8rem
+        max-width: map-get($container-max-widths, xl)
+        margin: auto
+        +transition(all, .4s)
+        +clearfix()
+
+
+    &--fixed
+        @extend .bg-white
+        box-shadow: 1px 5px 10px rgba(0, 0, 0, .1)
+        .main-nav-container
+            padding-top: 0
+        .navbar-nav
+            .nav-item,
+            a
+                color: $menu-text-dark
+            .btn
+                color: $menu-text-light
+
+    &--front-page
+        .navbar-nav
+            .nav-item
+                color: $menu-text-light
+            a
+                color: $menu-text-light
+        .navigation__auth
+            a
+                color: $menu-text-light
+
+.navigation
+    +clearfix()
+    .navbar-nav
+        float: right
+        line-height: 42px
+        +clearfix
+    .nav-item
+        margin-left: 2rem
+        color: $menu-text-dark
+        a
+            @media(max-width: #{map-get($grid-breakpoints, lg)})
+                display: block
+                &.btn
+                    display: inline-block
+
+    &--mobile
+        left: 0 !important
+
+    @media(max-width: #{map-get($grid-breakpoints, lg)})
+        position: fixed
+        width: 70%
+        top: 0px
+        bottom: 0px
+        padding-top: 1rem
+        background: white
+        left: -70%
+        +transition(all,.4s)
+
+        .nav-item
+            margin-left: 0
+            padding: 0 2.5rem
+            &:hover
+                background: $background-grey
+            & + .nav-item
+                margin-left: 0
+
+        .navigation__auth
+            a
+                color: $menu-text-dark
+        .nav-item-separator
+            visibility: hidden
+            opacity: 0
+
+
+    &__auth
+        a
+            color: $menu-text-dark
+        &.navbar-nav
+            @media(max-width: #{map-get($grid-breakpoints, lg)})
+                display: block
+                float: none
+                .nav-item
+                    display: block
+                    float: none
+
+        .btn
+            color: white
+            vertical-align: baseline
+
+
+    &__menu
+        a
+            color: $menu-text-light
+
+        &.navbar-nav
+            @media(max-width: #{map-get($grid-breakpoints, lg)})
+                display: block
+                float: none
+                border-top: 1px solid $border-grey
+                .nav-item
+                    display: block
+                    float: none
+                    a
+                        color: $menu-text-dark
