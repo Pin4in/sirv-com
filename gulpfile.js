@@ -9,7 +9,7 @@ var es = require('event-stream');
 var newer = require('gulp-newer');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
-
+var plumber = require('gulp-plumber');
 
 // additional variables
 var files = require('./components-path.js');
@@ -61,16 +61,18 @@ gulp.task('compile-bootstrap-theme', function() {
 
 // COMPYLE jade
 gulp.task('compile-jade', function(){
-  return gulp.src(['src/index.jade', 'src/views/pages/*.jade'])
-  .pipe(jade({pretty: true}))
-  .pipe(gulp.dest('build'))
-  .pipe(reload({ stream:true }));
+    return gulp.src(['src/index.jade', 'src/views/pages/*.jade'])
+        .pipe(plumber())
+        .pipe(jade({pretty: true}))
+        .pipe(gulp.dest('build'))
+        .pipe(reload({ stream:true }));
 });
 
 
 // Uglyfy js
 gulp.task('concat-js', function() {
   return gulp.src('src/scripts/*.js')
+    .pipe(plumber())
     .pipe(concat('app.js'))
     .pipe(gulp.dest('build/scripts'))
     .pipe(reload({ stream:true }));

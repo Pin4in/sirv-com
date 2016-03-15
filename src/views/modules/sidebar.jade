@@ -1,0 +1,30 @@
+aside.sidebar
+    .sidebar-container
+        p.sidebar__title In this article:
+        .nav
+            .nav-item
+                a.nav-link(href="#") Before you start
+            .nav-item.nav-item--has-subnav
+                a.nav-link(data-toggle="collapse" href="#options" aria-expanded="false") Options
+                #options.nav.collapse
+                    a.nav-link(href="#") URL format
+                    .nav-item.nav-item--has-subnav
+                        a.nav-link(data-toggle="collapse" href="#scale" aria-expanded="false") Scale
+                        #scale.nav.collapse
+                            a.nav-link(href="#") Scale options
+                            a.nav-link(href="#") One more option
+                    a.nav-link(href="#") Rotate
+            .nav-item
+                a.nav-link(href="#") Table of options
+            .nav-item
+                a.nav-link(href="#") Color
+            .nav-item
+                a.nav-link(href="#") Profile
+            .nav-item
+                a.nav-link(href="#") URL errors
+            .nav-item
+                a.nav-link(href="#") Special characters
+            .nav-item
+                a.nav-link(href="#") Retina support
+            .nav-item
+                a.nav-link(href="#") Caching & deletion

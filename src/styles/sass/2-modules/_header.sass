@@ -2,23 +2,13 @@
     color: $menu-text-dark
     background: $white
     +transition(padding, .2s)
-    &--landing
-        background-color: transparent
-        color: white
-        .mobile-menu-toggle
-            border-color: $blue
-            color: $blue
-        &.header--fixed
-            background: $white
-            color: $menu-text-dark
-            .mobile-menu-toggle
-                border-color: $blue
-                color: $blue
+    border-bottom: 1px solid $border-grey
 
     &--fixed
         .header__brand
             background: white
             box-shadow: $header-shadow
+
 
     &__brand
         width: 100%
@@ -34,6 +24,7 @@
         display: flex
         align-items: center
         +transition(left, .2s)
+
         @media(max-width: #{map-get($grid-max-breakpoints, lg)})
             position: fixed
             left: -22rem
@@ -52,8 +43,6 @@
                 left: 0
 
 
-
-
     .nav
         display: flex
         @media(max-width: #{map-get($grid-max-breakpoints, lg)})
@@ -61,6 +50,7 @@
             width: 100%
             &:first-child
                 order: 3
+
             .nav-item
                 &.active
                     background: $menu-mobile-active-bg
@@ -68,6 +58,8 @@
                 .btn
                     margin-left: 2rem
                     margin-bottom: .5rem
+
+
         &-divider
             width: 100%
             height: 1px
@@ -91,6 +83,7 @@
                 &:focus
                     background: $menu-mobile-hover-bg
 
+
         .nav-item
             &.active
                 +plain-hover-focus
@@ -100,6 +93,7 @@
     .container
         display: flex
         justify-content: space-between
+
 
     .mobile-menu-toggle
         display: block
@@ -118,31 +112,59 @@
         position: fixed
         right: 0
         left: 0
+        top: 0
         padding: 1.3rem 1rem
         z-index: 1000
-        &--landing
-            .header__nav-wrapper
-                .nav-divider
-                    background: $white
+
         &--fixed
             box-shadow: $header-shadow
             padding: 1rem
             .header__nav-wrapper
                 .nav-divider
                     background-color: $menu-text-dark
+
+
         &__brand
             position: static
             width: auto
             box-shadow: none !important
             padding: 0
+
+
         .nav
             &-divider
                 width: 1px
                 height: 1.5rem
                 margin: 0 1.5rem
                 order: 0
+
             .nav-item + .nav-item
                 margin-left: 1.5rem
 
+
         .mobile-menu-toggle
             display: none
+
+
+.has-transparent-header
+    .header
+        background-color: transparent
+        color: white
+        border: 0
+
+        @media(min-width: #{map-get($grid-breakpoints, lg)})
+            .header__nav-wrapper
+                .nav-divider
+                    background: $white
+
+        &--fixed
+            background: $white
+            color: $menu-text-dark
+            .mobile-menu-toggle
+                border-color: $blue
+                color: $blue
+
+
+        .mobile-menu-toggle
+            border-color: $blue
+            color: $blue
