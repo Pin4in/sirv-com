@@ -4,7 +4,15 @@
     &:active,
     &.active
         @include shadow(0, .5rem, .6rem, 0, rgba(0,0,0,.3))
+.btn-link
+    box-shadow: none
+    &:active,
+    &.active
+        box-shadow: none
 
+.btn-sm
+    line-height: 1
+    padding: .35rem 0.75rem
 
 .btn-outline-light
     color: white
@@ -35,3 +43,8 @@
 
         @include hover
             border-color: lighten(white, 20%)
+
+
+
+.btn-outline-secondary
+    @include button-outline-variant(#a2a2a2)

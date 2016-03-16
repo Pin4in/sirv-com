@@ -17,5 +17,6 @@ exports.styles = [
 
   // Font-awesome
   'components/font-awesome/css/font-awesome.min.css',
-  'components/font-awesome/fonts/fontawesome-webfont.*'
+  'components/font-awesome/fonts/fontawesome-webfont.*',
+  'components/highlightjs/styles/github.css'
 ];

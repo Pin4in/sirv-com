@@ -110,7 +110,8 @@ gulp.task('serve', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', '
   browserSync({
     server: {
       baseDir: 'build'
-    }
+    },
+    online: true
   });
 
   gulp.watch(['src/styles/sass/**/*.sass'] , ['compile-sass']);
