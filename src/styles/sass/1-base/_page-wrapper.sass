@@ -4,9 +4,48 @@
     padding-top: 4.9rem
     padding-bottom: 3rem
     box-sizing: border-box
-
+    overflow: hidden
     &--has-sidebar
-        display: flex
+        overflow: hidden
+        width: 100%
+        position: absolute
+        height: 100%
+        .content-wrapper
+            position: absolute
+            z-index: 1
+            margin-left: 0
+            +transition(margin-left, .2s)
+            background: $white
+            height: 100%
+            overflow-y: auto
+            padding-bottom: 5rem
+            @media(min-width: #{map-get($grid-breakpoints, md)})
+                margin-left: 21rem
+
+
+        .sidebar
+            position: fixed
+            left: 0
+            top: 0
+            bottom: 3rem
+            padding-top: 7rem
+            height: 100%
+
+
+        .header__brand
+            background: $white
+            margin-left: 0
+            +transition(margin-left, .2s)
+            @media(max-width:  #{map-get($grid-max-breakpoints, md)})
+                border-bottom: 1px solid $border-grey
+
+        &.on
+            .content-wrapper
+                margin-left: 21rem
+                width: 100%
+
+            .header__brand
+                margin-left: 21rem
 
 .page-wrapper:after
     content: ""

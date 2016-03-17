@@ -10,15 +10,10 @@ extends ../layout
 
 block content
 
-    include ../structure/header
     .page-wrapper.page-wrapper--has-sidebar
+        include ../structure/header--sidebar-toggle
         include ../modules/sidebar
         main.content-wrapper
-            //- section
-            //-     h1 DYNAMIC IMAGING DOCUMENTATION:
-            //-     ul
-            //-         li Learn how to create images on-the-fly with Sirv
-            //-         li It's fast and easy - no technical knowledge required
                     
             include ../modules/article
 
@@ -86,4 +81,3 @@ block content
                     a(href="#") profile
                     |, which is perfect if you’re applying the same options to many images.
     
-    include ../modules/footer

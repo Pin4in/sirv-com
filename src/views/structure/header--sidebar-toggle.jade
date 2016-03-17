@@ -1,0 +1,39 @@
+.header
+    .container
+        //- Brand
+        .header__brand
+            button.sidebar-toggle( type="button")
+                i.fa.fa-bars
+            a(href='#')
+                include ../modules/logo
+                
+        //- Navs wrapper
+        .header__nav-wrapper
+        
+            //- Navigation
+            ul.nav
+                li.nav-item.active
+                    a.nav-link(href='#')
+                        | Features 
+                        span.sr-only (current)
+                li.nav-item
+                    a.nav-link(href='#') Pricing
+                li.nav-item
+                    a.nav-link(href='#') Demos
+                li.nav-item
+                    a.nav-link(href='#') Partners
+                li.nav-item
+                    a.nav-link(href='#') Docs
+                li.nav-item
+                    a.nav-link(href='#') Help
+                li.nav-item
+                    a.nav-link(href='#') Contact
+                    
+            .nav-divider
+            
+            //- Client
+            ul.nav.nav--client
+                li.nav-item
+                    button.btn.btn-primary(href='#') START NOW
+                li.nav-item
+                    a.nav-link(href='#') Log in

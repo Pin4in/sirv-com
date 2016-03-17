@@ -41,11 +41,21 @@
             classy.toggle($(menu), mobileMenuActiveClass);
             $(overflow).toggleClass('show');
         });
-        $(overflow).on('click', function () {
-            classy.toggle($(menu), mobileMenuActiveClass)
-            $(this).toggleClass('show');
+
+
+        var sidebaToggle = $('.sidebar-toggle');
+        var offcanvasSidebar = $('.page-wrapper--has-sidebar');
+
+        $(sidebaToggle).on('click' , function() {
+            classy.toggle($(offcanvasSidebar), 'on');
+            // $(overflow).toggleClass('show');
         });
 
+
+        $(overflow).on('click', function () {
+            classy.toggle($(menu), mobileMenuActiveClass);
+            $(this).toggleClass('show');
+        });
 
   }
 )();
