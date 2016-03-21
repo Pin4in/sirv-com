@@ -1,0 +1,129 @@
+$enable-flex: true
+
+
+.pricing
+    margin: 3rem 0
+    @include make-container()
+    @include make-container-max-widths()
+    &-title
+        font-size: 3.5rem
+        margin-bottom: 2rem
+        text-align: center
+        color: $text-grey
+        font-family: $yantra
+
+
+.pricing-cta
+    display: flex
+    max-width: 800px
+    margin: 0 auto 4rem
+    text-align: center
+    align-items: center
+    flex-direction: column
+    &--reverse
+        flex-direction: column-reverse
+    &
+        @include media(md)
+            flex-direction: row
+
+
+
+    &__txt,
+        flex: 0 0 60%
+        color: $pricing-helpers-txt
+        font-size: 1.1rem
+        line-height: 1.8rem
+        margin-bottom: 2rem
+        @include media(md)
+            margin-bottom: 0
+    &__action
+        flex: 0 0 40%
+        color: $pricing-helpers-txt
+        .btn
+            font-size: 1.25rem
+            padding: 1rem 3rem
+            border-radius: 2rem
+            margin-bottom: .5rem
+
+
+        .fa
+            margin-left: 1rem
+            font-size: 1.7rem
+            vertical-align: text-bottom
+
+.compare-features
+    margin-bottom: 4rem
+    &__title
+        color: $text-grey
+        font-size: 3rem
+        text-align: center
+        margin-bottom: 2rem
+
+.features-table
+    overflow-x: auto
+    border-left: 1px solid $border-grey
+    border-right: 1px solid $border-grey
+    .features-table__prices
+        font-weight: 500
+        font-family: $yantra
+        color: $pricing-txt-accent
+        li:first-child
+            color: $grey-light
+    ul
+        list-style: none
+        display: flex
+        border: 1px solid $border-grey
+        border-right-width: 0
+        border-left-width: 0
+        color: $grey-light
+        font-size: 1.3rem
+        &:last-child
+            margin-bottom: 0
+        li
+            min-width: 8rem
+            padding: 1.5rem .5rem
+
+    h3
+        font-size: 1.5rem
+        font-family: $opensans
+        color: $pricing-helpers-txt
+        margin-top: 1.5rem
+        margin-bottom: 1.5rem
+        margin-left: 1rem
+        span
+            font-size: 1.25rem
+
+.compare-plans
+    margin-bottom: 4rem
+    &__title
+        @extend .compare-features__title
+
+.plans
+    display: flex
+    overflow-y: auto
+    border: 1px solid $border-grey
+
+.plan
+    flex: 0 0 33.3333%
+    border-left: 1px solid $border-grey
+    padding-top: 2rem
+    min-width: 20rem
+    text-align: center
+    &:first-child
+        border-left: none
+    &__title
+        text-transform: uppercase
+        font-size: 1.2rem
+    &__price
+        padding-bottom: 2rem
+        border-bottom: 1px solid $border-grey
+        margin-bottom: 2rem
+        color: $grey-light
+        font-size: 1.2rem
+
+    &__features
+        list-style: none
+        padding-left: 0
+        color: $pricing-txt-accent
+        li
+            margin-bottom: 2.5rem

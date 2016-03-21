@@ -3,3 +3,8 @@
 
 @mixin shadow($shift-horizontal, $shift-vertical, $blur, $spread, $color)
     box-shadow: $shift-horizontal $shift-vertical $blur $spread $color
+
+
+=media($breakpoint)
+    @media(min-width: #{map-get($grid-breakpoints, $breakpoint)})
+        @content

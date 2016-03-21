@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+
+    include ../structure/header
+    .page-wrapper
+        .pricing
+            h1.pricing-title Pricing
+            
+            include pricing-modules/top-cta
+                    
+            include pricing-modules/pricing-table
+            
+            include pricing-modules/compare-features
+            
+            include pricing-modules/compare-plans
+            
+            include pricing-modules/bot-cta
+            hr
+            include pricing-modules/regular-questions        
+
+    include ../modules/footer

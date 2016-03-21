@@ -1,0 +1,25 @@
+.regular-questions
+    +make-container()
+    &__title
+        @extend .compare-features__title
+
+.questions
+    +make-row(.8rem)
+    padding-top: 3rem
+    +media(md)
+        display: flex
+        flex-wrap: wrap
+
+.question
+    margin-bottom: 3rem
+    +media(md)
+        +make-col(1, 2, .8rem)
+
+    &__title
+        color: #465467
+        font-weight: 300
+        margin-bottom: 1.5rem
+    &__text
+        color: rgba(101, 117, 138, .85)
+        font-size: 1.1rem
+        line-height: 1.6

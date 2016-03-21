@@ -15,26 +15,25 @@ var plumber = require('gulp-plumber');
 var files = require('./components-path.js');
 
 var paths = {
-  src: 'src',
-  build: 'build'
+    src: 'src',
+    build: 'build'
 }
 
 function pathBuilder(arg, target, folder) {
-  var newPath = arg.split('/');
-      if(folder === true) {
-        newPath.pop()
-      }
-      newPath.unshift(target)
-      // console.log(newPath.join('/'))
-      return newPath.join('/');
+    var newPath = arg.split('/');
+        if(folder === true) {
+            newPath.pop()
+        }
+    newPath.unshift(target)
+    return newPath.join('/');
 }
 
 function buildPath(arg) {
-  return pathBuilder(arg, paths.build, true);
+    return pathBuilder(arg, paths.build, true);
 }
 
 function srcPath(arg) {
-  return pathBuilder(arg, paths.src, false);
+    return pathBuilder(arg, paths.src, false);
 }
 
 // ==================================================
@@ -44,18 +43,19 @@ function srcPath(arg) {
 
 // COMPILE my styles
 gulp.task('compile-sass', function() {
-  return sass('src/styles/sass/main.sass',{ style: 'compressed' })
-    .pipe(autoprefixer())
-    .pipe(gulp.dest('build/styles'))
-    .pipe(reload({ stream:true }));
+    return sass('src/styles/sass/main.sass',{ style: 'compressed' })
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('build/styles'))
+        .pipe(reload({ stream:true }));
 });
 
 
 // COMPILE bootstrap theme
 gulp.task('compile-bootstrap-theme', function() {
-  return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
-    .pipe(gulp.dest('build/styles'))
-    .pipe(reload({ stream:true }));
+    return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('build/styles'))
+        .pipe(reload({ stream:true }));
 });
 
 
@@ -71,20 +71,20 @@ gulp.task('compile-jade', function(){
 
 // Uglyfy js
 gulp.task('concat-js', function() {
-  return gulp.src('src/scripts/*.js')
-    .pipe(plumber())
-    .pipe(concat('app.js'))
-    .pipe(gulp.dest('build/scripts'))
-    .pipe(reload({ stream:true }));
+    return gulp.src('src/scripts/*.js')
+        .pipe(plumber())
+        .pipe(concat('app.js'))
+        .pipe(gulp.dest('build/scripts'))
+        .pipe(reload({ stream:true }));
 });
 
 
 // COPY js components if NEW
 gulp.task('js-components', function () {
     return es.merge(files.scripts.map(function (conf) {
-      return gulp.src(srcPath(conf))
-        .pipe(newer(buildPath(conf)))
-        .pipe(gulp.dest(buildPath(conf)));
+        return gulp.src(srcPath(conf))
+            .pipe(newer(buildPath(conf)))
+            .pipe(gulp.dest(buildPath(conf)));
     }));
 });
 
@@ -92,31 +92,31 @@ gulp.task('js-components', function () {
 // COPY styles components if NEW
 gulp.task('style-components', function () {
     return es.merge(files.styles.map(function (conf) {
-      return gulp.src(srcPath(conf))
-        .pipe(newer(buildPath(conf)))
-        .pipe(gulp.dest(buildPath(conf)));
+        return gulp.src(srcPath(conf))
+            .pipe(newer(buildPath(conf)))
+            .pipe(gulp.dest(buildPath(conf)));
     }));
 });
 
 gulp.task('copy-assets', function () {
     return gulp.src(srcPath('assets/**/*.*'), {base:'./src/'})
-      .pipe(gulp.dest('build'));
+        .pipe(gulp.dest('build'));
 })
 
 // ======================================================================
 // watch Sass and Jade files for changes, run the preprocessor and reload
 // ======================================================================
 gulp.task('serve', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', 'style-components', 'js-components', 'concat-js', 'copy-assets'], function() {
-  browserSync({
-    server: {
-      baseDir: 'build'
-    },
-    online: true
-  });
+    browserSync({
+        server: {
+            baseDir: 'build'
+        },
+        online: true
+    });
 
-  gulp.watch(['src/styles/sass/**/*.sass'] , ['compile-sass']);
-  gulp.watch(['src/styles/bootstrap-theme/*{.sass,.scss}'] , ['compile-bootstrap-theme']);
-  gulp.watch(['src/scripts/*.js'] , ['concat-js']);
-  gulp.watch(['**/*.jade'] , ['compile-jade']);
-  gulp.watch(['*.html'] , {cwd: 'build'}, reload);
+    gulp.watch(['src/styles/sass/**/*.sass'] , ['compile-sass']);
+    gulp.watch(['src/styles/bootstrap-theme/*{.sass,.scss}'] , ['compile-bootstrap-theme']);
+    gulp.watch(['src/scripts/*.js'] , ['concat-js']);
+    gulp.watch(['**/*.jade'] , ['compile-jade']);
+    gulp.watch(['*.html'] , {cwd: 'build'}).on('change', reload);
 });
