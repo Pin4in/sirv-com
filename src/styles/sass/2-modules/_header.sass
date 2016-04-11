@@ -1,12 +1,12 @@
 .header
     color: $menu-text-dark
-    background: $white
+    background: $header-background-color
     +transition(padding, .2s)
     border-bottom: 1px solid $border-grey
 
     &--fixed
         .header__brand
-            background: white
+            background: $header-background-color
             box-shadow: $header-shadow
 
 
@@ -161,7 +161,7 @@
                     background: $white
 
         &--fixed
-            background: $white
+            background: $header-background-color
             color: $menu-text-dark
             .mobile-menu-toggle,
             .sidebar-toggle

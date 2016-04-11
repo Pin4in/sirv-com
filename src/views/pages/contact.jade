@@ -1,0 +1,97 @@
+extends ../layout
+
+block content
+
+  include ../structure/header
+  .page-wrapper
+    .pricing
+      h1.pricing-title Contact Sales
+                    
+    .contact-wrapper
+      p.contact-form-intro
+        | Please complete the form below to have a  
+        a(href="#") Sirv Enterprise
+        |  expert contact you to discuss your business needs.
+      form.contact-form
+        .row
+          .col-md-6.col-xs-12
+            small.validation-message *Please write your name
+            input.form-control.form-control-lg(type='text', placeholder='Your full name')
+          .col-md-6.col-xs-12
+            small.validation-message.validation-message--error *Please write correct email address
+            input.form-control.form-control-lg(type='email', placeholder='Email address')
+        .row
+          .col-md-6.col-xs-12
+            input.form-control.form-control-lg(type='telephone', placeholder='Phone')
+          .col-md-6.col-xs-12
+            input.form-control.form-control-lg(type='text', placeholder='Organization name')
+        .row
+          .col-md-6.col-xs-12
+            small.validation-message *Please select timeframe
+            label(for='time') Decision Timeframe
+            .select-wrapper
+              select#time.form-control.form-control-lg
+                option immediately
+                option 2
+                option 3
+                option 4
+                option 5
+          .col-md-6.col-xs-12
+            small.validation-message *Please select your country
+            label(for='country') Country
+            .select-wrapper.has-map-marker
+              select#country.form-control.form-control-lg
+                option United Kindom
+                option 2
+                option 3
+                option 4
+                option 5
+        fieldset.form-group
+            label(for='text') Your Question(s)
+            textarea#text.form-control(rows='5'  placeholder="Type here...")
+        .form-footer
+          .form-footer__left
+            span Preferred method of contact:
+            fieldset.form-group
+              .custom-control
+                label.custom-radio
+                  input.custom-control-input( type="radio" name="contact-method" value="Email" checked)
+                  span.custom-control-indicator
+                  p Email
+              .custom-control
+                label.custom-radio
+                  input.custom-control-input( type="radio" name="contact-method" value="Phone")
+                  span.custom-control-indicator
+                  p Phone
+          .form-footer__right
+            button.btn.btn-outline-primary.btn-lg(type='submit') Get in Touch
+
+    .contact-info
+      .contact-info__location
+        .sirv-brand
+          span.s-icon.s-icon-marker
+          include ../modules/logo
+        p 9 Cowley Road
+        p Oxford
+        p OX4 1HP
+        p United Kingdom
+      .contact-info__sales
+        h2 Sales
+        p
+          a(href="") sales@sirv.com
+        p +44 (0) 2033552837
+        p CEO: Jake Brumby
+      .contact-info__social
+        a(href="") 
+          span.s-icon.s-icon-email
+        a(href="")
+          span.s-icon.s-icon-fb
+
+        a(href="") 
+          span.s-icon.s-icon-tw
+
+
+
+          
+          
+  include ../modules/footer

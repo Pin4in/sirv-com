@@ -1,5 +1,5 @@
-mixin newArticle(title)
-    article.article
+mixin newArticle(title, newId)
+    article(class="article", id=newId)
         header 
             h2= title
             if block

@@ -38,6 +38,71 @@
       <button class="btn btn-outline-primary btn-lg">Large button</button>
       <button class="btn btn-outline-primary">Regular button</button>
       <button class="btn btn-outline-primary btn-sm">Small button</button>
+      <h2 class="m-b-2 m-t-2">Forms</h2>
+      <form>
+        <fieldset class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input id="exampleInputEmail1" type="email" placeholder="Enter email" class="form-control"><small class="text-muted">We'll never share your email with anyone else.</small>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input id="exampleInputPassword1" type="password" placeholder="Password" class="form-control">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleSelect1">Example select</label>
+          <select id="exampleSelect1" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleSelect2">Example multiple select</label>
+          <select id="exampleSelect2" multiple="" class="form-control">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleTextarea">Example textarea</label>
+          <textarea id="exampleTextarea" rows="3" class="form-control"></textarea>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="exampleInputFile">File input</label>
+          <input id="exampleInputFile" type="file" class="form-control-file"><small class="text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+        </fieldset>
+        <div class="radio">
+          <label>
+            <input id="optionsRadios1" type="radio" name="optionsRadios" value="option1" checked="">      Option one is this and that—be sure to include why it's great
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input id="optionsRadios2" type="radio" name="optionsRadios" value="option2">      Option two can be something else and selecting it will deselect option one
+          </label>
+        </div>
+        <div class="radio disabled">
+          <label>
+            <input id="optionsRadios3" type="radio" name="optionsRadios" value="option3" disabled="">      Option three is disabled
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input type="checkbox"> Check me out
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <h2 id="form-sizing" class="m-b-2 m-t-2">Forms sizing</h2>
+      <input type="text" placeholder=".form-control-lg" class="form-control form-control-lg m-b-1">
+      <input type="text" placeholder="Default input" class="form-control m-b-1">
+      <input type="text" placeholder=".form-control-sm" class="form-control form-control-sm m-b-1">
+      <div style="height: 2000px"></div>
     </div>
     <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.min.js"></script>

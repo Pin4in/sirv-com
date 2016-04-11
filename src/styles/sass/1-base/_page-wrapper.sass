@@ -11,7 +11,7 @@
         position: absolute
         height: 100%
         .content-wrapper
-            position: absolute
+            position: relative
             z-index: 1
             margin-left: 0
             +transition(margin-left, .2s)
@@ -28,16 +28,19 @@
             left: 0
             top: 0
             bottom: 3rem
-            padding-top: 7rem
+            padding-top: 3rem
             height: 100%
+            @media(min-width: #{map-get($grid-breakpoints, md)})
+                padding-top: 7rem
 
 
         .header__brand
-            background: $white
+            // background: $white
             margin-left: 0
             +transition(margin-left, .2s)
             @media(max-width:  #{map-get($grid-max-breakpoints, md)})
                 border-bottom: 1px solid $border-grey
+                background-color: $white
 
         &.on
             .content-wrapper

@@ -1,0 +1,94 @@
+.select-wrapper
+  position: relative
+  &:after
+    content: "\f0d7"
+    font-family: 'FontAwesome'
+    position: absolute
+    top: 13px
+    right: 10px
+    z-index: 5
+    color: $blue-light
+
+
+
+  &.has-map-marker
+    &::before
+      content: "\f041"
+      font-family: 'FontAwesome'
+      position: absolute
+      top: .7rem
+      left: .8rem
+      z-index: 5
+      color: $blue-light
+      font-size: 1.2rem
+    .form-control
+      padding-left: 1.8rem
+  select
+    appearance: none
+
+
+label
+  & + .select-wrapper
+    .form-control
+      border-top-left-radius: 0
+
+
+.custom-control
+  padding-left: 0
+
+  label
+    cursor: pointer
+    padding-left: 1.5rem
+
+  .custom-control-input:checked ~ p
+    color: $brand-primary
+
+
+  .custom-control-input
+    &:active ~ .custom-control-indicator,
+    &:checked ~ .custom-control-indicator
+      background-color: #fff
+      box-shadow: none
+
+
+  .custom-radio
+    display: inline-flex
+    flex-wrap: nowrap
+    align-items: center
+    padding-left: 0
+    position: relative
+    vertical-align: middle
+
+    .custom-control-indicator
+      background-color: #fff
+      border: 1px solid #3e83be
+
+
+    p
+      order: 2
+      padding-left: .4rem
+
+
+    .custom-control-input
+      order: 3
+
+
+    .custom-control-indicator
+      position: relative
+      order: 1
+      top: auto
+
+
+    .custom-control-input:checked ~ .custom-control-indicator:after
+      content: ""
+      display: block
+      position: absolute
+      top: 0
+      bottom: 0
+      right: 0
+      left: 0
+      width: 4px
+      height: 4px
+      margin: auto
+      border-radius: 50%
+      background-color: $brand-primary

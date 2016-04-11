@@ -1,0 +1,27 @@
+.content-wrapper
+    ol
+        padding-left: 1.2rem
+    ul
+        list-style: none
+        padding-left: 0
+        li
+            display: flex
+            align-items: center
+            &:before
+                content: ""
+                display: block
+                width: 5px
+                height: 5px
+                border-radius: 50%
+                background-color: $list-decoration-color
+                margin-right: 1rem
+
+        &.success-list
+            li
+                font-weight: 700
+                line-height: 3rem
+                &:before
+                    width: 1.715rem
+                    height: 1.715rem
+                    background: $list-success-icon
+                    background-size: cover

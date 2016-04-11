@@ -1,0 +1,21 @@
+=icon-sprite($position, $width, $height)
+  background-position: $position
+  height: $height
+  width: $width
+
+.s-icon
+  display: inline-block
+  background: url('../assets/img/css-sprite.png')
+
+
+  &-marker
+    +icon-sprite(0 -24px, 30px, 46px)
+
+  &-fb
+    +icon-sprite(-30px 0, 14px, 24px)
+
+  &-email
+    +icon-sprite(-60px 0, 26px, 19px)
+
+  &-tw
+    +icon-sprite(0 0, 26px, 21px)
