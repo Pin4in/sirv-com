@@ -18,75 +18,75 @@ block content
     include ../structure/header--off-canvas-sidebar
     include ../modules/sidebar
     main.content-wrapper
-                
-      .post-title
-        h1 How to add hotspots on a 360 spin
-        p.post-meta
-          | Created:
-          span 21st August 2015  /
-          | Author: 
-          span Johnny Black
-      hr
+      .content-container          
+        .post-title
+          h1 How to add hotspots on a 360 spin
+          p.post-meta
+            | Created:
+            span 21st August 2015  /
+            | Author: 
+            span Johnny Black
+        hr
 
-      +newArticle('Before you started')
-        p The bigger your original image, the more options you’ll have.
-          br
-          | For best results, upload images of:
-        ul.success-list
-          li At least 2500px width
-          li if JPEG, 92% to 96% quality
-        p Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality 
-          a(href="#") Sirv Zooms
-          |   and permit glorious clarity on hi-res screens.
-        p For more tips, read 
-          a(href="#") Getting started with Sirv
-          |. For help, 
-          a(href="#") contact Sirv support
-          |  from your control panel.
-
-        
-        +newArticle('Options')
-          p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
-            a(href="#") Table of Options
-            |  lists all 60 options.
-        
-        
-        +newArticle('URL format')
-          p New images are created by appending options in your image URL.
+        +newArticle('Before you started')
+          p The bigger your original image, the more options you’ll have.
             br
-            | Here is an image without any options:
+            | For best results, upload images of:
+          ul.success-list
+            li At least 2500px width
+            li if JPEG, 92% to 96% quality
+          p Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality 
+            a(href="#") Sirv Zooms
+            |   and permit glorious clarity on hi-res screens.
+          p For more tips, read 
+            a(href="#") Getting started with Sirv
+            |. For help, 
+            a(href="#") contact Sirv support
+            |  from your control panel.
 
-          .code
-            pre
-              code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg
-
-          img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg")
           
+          +newArticle('Options')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          
+          
+          +newArticle('URL format')
+            p New images are created by appending options in your image URL.
+              br
+              | Here is an image without any options:
 
-          p Here is the same image scaled to 300px (notice the URL):
+            .code
+              pre
+                code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg
+
+            img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg")
             
-          .code
-            pre
-              code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300
 
-          img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg")
-          
-          p Pixel values are referenced using the number only. For percentage values, always use the ‘
-            span.bold %
-            | ‘ sign, eg: 40%.
-            br
-            | Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘
-            span.bold &
-            | ‘ character:
-                
-          .code
-            pre
-              code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two
+            p Here is the same image scaled to 300px (notice the URL):
+              
+            .code
+              pre
+                code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300
 
-                
-          img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg")
-          
-          p Options can be saved in a 
-            a(href="#") profile
-            |, which is perfect if you’re applying the same options to many images.
-    
+            img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg")
+            
+            p Pixel values are referenced using the number only. For percentage values, always use the ‘
+              span.bold %
+              | ‘ sign, eg: 40%.
+              br
+              | Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘
+              span.bold &
+              | ‘ character:
+                  
+            .code
+              pre
+                code.hljs.nohighlight //test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two
+
+                  
+            img(src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg")
+            
+            p Options can be saved in a 
+              a(href="#") profile
+              |, which is perfect if you’re applying the same options to many images.
+      

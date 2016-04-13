@@ -12,9 +12,9 @@
   &--fixed
     box-shadow: $header-shadow
     padding: 1rem
-    .header__nav-wrapper
-      .nav-divider
-        background-color: $menu-text-dark
+    // .header__nav-wrapper
+    .nav-divider
+      background-color: $menu-text-dark
 
   &__brand
     display: flex
@@ -34,6 +34,16 @@
   .nav
     display: flex
 
+    .nav-link
+      height: 2.2rem
+      line-height: 2.2rem
+      color: inherit
+      @include hover-focus
+        color: $menu-text-active
+    .nav-item
+      &.active
+        +plain-hover-focus
+          color: $menu-text-active
 
   .container
     display: flex
@@ -63,9 +73,9 @@
     &--fixed
       box-shadow: $header-shadow
       padding: 1rem
-      .header__nav-wrapper
-        .nav-divider
-          background-color: $menu-text-dark
+      // .header__nav-wrapper
+      .nav-divider
+        background-color: $menu-text-dark
 
 
     &__brand
@@ -97,9 +107,9 @@
     border: 0
 
     @media(min-width: #{map-get($grid-breakpoints, lg)})
-      .header__nav-wrapper
-        .nav-divider
-          background: $white
+      // .header__nav-wrapper
+      .nav-divider
+        background: $white
     &__brand
       background: transparent
       border-bottom-width: 0
@@ -111,11 +121,13 @@
       .sidebar-toggle
         border-color: $blue
         color: $blue
-      .header__brand
-        background: $header-background-color
-        @media(max-width: #{map-get($grid-max-breakpoints, lg)})
-          border-bottom-width: 1px
-
+      // .header__brand
+      //   background: $header-background-color
+      //   @media(max-width: #{map-get($grid-max-breakpoints, lg)})
+      //     border-bottom-width: 1px
+      // .header__nav-wrapper
+      .nav-divider
+        background: $menu-text-dark
 
     .mobile-menu-toggle,
     .sidebar-toggle
