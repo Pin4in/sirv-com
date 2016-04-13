@@ -1,11 +1,12 @@
 extends ../layout
 
 block content
-
-    include ../structure/header
-    .page-wrapper
+  .off-canvas-wrapper
+    .off-canvas-content
+      .page-wrapper
+        include ../structure/header
         .pricing
-            h1.pricing-title Pricing
+            h1.page-title Pricing
             
             include pricing-modules/top-cta
                     
@@ -17,6 +18,6 @@ block content
             
             include pricing-modules/bot-cta
             hr
-            include pricing-modules/regular-questions        
-
-    include ../modules/footer
+            include pricing-modules/regular-questions       
+        include ../structure/footer
+    include ../modules/off-canvas-menu

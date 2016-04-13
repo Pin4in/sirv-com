@@ -1,10 +1,60 @@
 html,
 body
-    height: 100%
-    font-size: 14px
+  height: 100%
+  font-size: 14px
 body
-    font-family: $opensans
+  font-family: $opensans
+  overflow-x: hidden
 
 hr
-    border-color: #dadde0
-    margin: 3rem 0
+  border-color: #dadde0
+  margin: 3rem 0
+
+
+.off-canvas-sidebar
+
+  &.on
+    .header
+      margin-left: $sidebar-offset
+    .content-wrapper
+      margin-left: $sidebar-offset
+    .overflow
+      margin-left: $sidebar-offset
+
+  .header
+    margin-left: 0
+    +transition(margin-left, .2s)
+
+  .page-wrapper
+    overflow: hidden
+    width: 100%
+    position: absolute
+    height: 100%
+  .content-wrapper
+    position: relative
+    z-index: 1
+    margin-left: 0
+    +transition(margin-left, .2s)
+    background: $white
+    height: 100%
+    width: 100%
+    overflow-y: auto
+    padding-bottom: 5rem
+    +media(lg)
+      width: auto
+      margin-left: 21rem
+  .content-container
+    +make-container()
+    +make-container-max-widths()
+    +media(lg)
+      width: 100%
+
+  .sidebar
+    position: fixed
+    left: 0
+    top: 0
+    bottom: 3rem
+    padding-top: 3rem
+    height: 100%
+    +media(lg)
+      padding-top: 7rem

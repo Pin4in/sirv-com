@@ -10,12 +10,11 @@
     <link rel="stylesheet" href="styles/sirv-theme.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body>
+  <body class="off-canvas-sidebar">
     <div class="page-wrapper page-wrapper--has-sidebar">
       <div class="header header--wide">
         <div class="container">
-          <div class="header__brand">
-            <button type="button" class="sidebar-toggle"><i class="fa fa-bars"></i></button><a href="landing-enterprise.html">
+          <div class="header__brand"><a href="landing-enterprise.html">
               <html lang="en">
                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="54px" height="28px" viewBox="0 0 53.938 27.438" enable-background="new 0 0 54 28" xml:space="preserve" class="lgo">
                   <path fill="#4C4C4C" d="M13.261,3.79c-0.748-0.476-2.38-1.189-4.556-1.189c-3.604,0-4.963,2.209-4.963,4.08 c0,2.549,1.563,3.841,5.031,5.303c4.182,1.768,6.323,3.91,6.323,7.615c0,4.114-2.992,7.275-8.567,7.275 c-2.346,0-4.896-0.714-6.188-1.632l0.782-2.346c1.394,0.918,3.468,1.598,5.576,1.598c3.468,0,5.507-1.87,5.507-4.657 c0-2.55-1.394-4.114-4.759-5.474c-3.91-1.462-6.562-3.74-6.562-7.31c0-3.943,3.196-6.833,7.921-6.833 c2.448,0,4.317,0.612,5.303,1.224L13.261,3.79z"></path>
@@ -25,6 +24,7 @@
                   <polygon fill="#327BBA" points="48.003,22.666 53.578,8 50.586,8 46.915,18.729 46.798,19.078"></polygon>
                 </svg>
               </html></a>
+            <button type="button" class="sidebar-toggle"><i class="fa fa-bars"></i></button>
           </div>
           <div class="header__nav-wrapper">
             <ul class="nav">
@@ -34,7 +34,7 @@
               <li class="nav-item"><a href="#" class="nav-link">Partners</a></li>
               <li class="nav-item"><a href="knowledge-base.html" class="nav-link">Docs</a></li>
               <li class="nav-item"><a href="#" class="nav-link">Help</a></li>
-              <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+              <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-divider"></div>
             <ul class="nav nav--client">
@@ -72,56 +72,58 @@
         </div>
       </aside>
       <main data-spy="scroll" data-target=".sidebar" class="content-wrapper">
-        <div class="page-title">
-          <h1>DYNAMIC IMAGIN DOCUMENTATION</h1>
-          <ul>
-            <li>Learn how to create images on-the-fly with Sirv.</li>
-            <li>It's fas and easy - no technical knowledge required.</li>
-          </ul>
-        </div>
-        <article id="a1" class="article">
-          <header> 
-            <h2>Before you started</h2>
-            <p>The bigger your original image, the more options you’ll have.<br>For best results, upload images of:</p>
-            <ul class="success-list">
-              <li>At least 2500px width</li>
-              <li>if JPEG, 92% to 96% quality</li>
+        <div class="content-container">
+          <div class="post-title">
+            <h1>DYNAMIC IMAGIN DOCUMENTATION</h1>
+            <ul>
+              <li>Learn how to create images on-the-fly with Sirv.</li>
+              <li>It's fas and easy - no technical knowledge required.</li>
             </ul>
-            <p>Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality <a href="#">Sirv Zooms</a>  and permit glorious clarity on hi-res screens.</p>
-            <p>For more tips, read <a href="#">Getting started with Sirv</a>. For help, <a href="#">contact Sirv support</a> from your control panel.</p>
-          </header>
-        </article>
-        <article id="a2" class="article">
-          <header> 
-            <h2>Options</h2>
-            <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
-          </header>
-        </article>
-        <article id="a3" class="article">
-          <header> 
-            <h2>URL format</h2>
-            <p>New images are created by appending options in your image URL.<br>Here is an image without any options:</p>
-            <div class="code">
-              <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg</code></pre>
-            </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg">
-            <p>Here is the same image scaled to 300px (notice the URL):</p>
-            <div class="code">
-              <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300</code></pre>
-            </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
-            <p>Pixel values are referenced using the number only. For percentage values, always use the ‘<span class="bold">%</span>‘ sign, eg: 40%.<br>Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘<span class="bold">&</span>‘ character:</p>
-            <div class="code">
-              <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two</code></pre>
-            </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&amp;colortone=texas&amp;frame.style=mirror&amp;text.text=%C2%A9Steve%20Wilson&amp;text.size=40%&amp;text.color=white&amp;text.position=northeast&amp;text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
-            <p>Options can be saved in a <a href="#">profile</a>, which is perfect if you’re applying the same options to many images.</p>
-          </header>
-        </article>
+          </div>
+          <article id="a1" class="article">
+            <header> 
+              <h2>Before you started</h2>
+              <p>The bigger your original image, the more options you’ll have.<br>For best results, upload images of:</p>
+              <ul class="success-list">
+                <li>At least 2500px width</li>
+                <li>if JPEG, 92% to 96% quality</li>
+              </ul>
+              <p>Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality <a href="#">Sirv Zooms</a>  and permit glorious clarity on hi-res screens.</p>
+              <p>For more tips, read <a href="#">Getting started with Sirv</a>. For help, <a href="#">contact Sirv support</a> from your control panel.</p>
+            </header>
+          </article>
+          <article id="a2" class="article">
+            <header> 
+              <h2>Options</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="a3" class="article">
+            <header> 
+              <h2>URL format</h2>
+              <p>New images are created by appending options in your image URL.<br>Here is an image without any options:</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Here is the same image scaled to 300px (notice the URL):</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Pixel values are referenced using the number only. For percentage values, always use the ‘<span class="bold">%</span>‘ sign, eg: 40%.<br>Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘<span class="bold">&</span>‘ character:</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&amp;colortone=texas&amp;frame.style=mirror&amp;text.text=%C2%A9Steve%20Wilson&amp;text.size=40%&amp;text.color=white&amp;text.position=northeast&amp;text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Options can be saved in a <a href="#">profile</a>, which is perfect if you’re applying the same options to many images.</p>
+            </header>
+          </article>
+        </div>
       </main>
     </div>
+    <div class="overflow"></div>
     <script type="text/javascript" src="components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="components/highlightjs/highlight.pack.min.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    
-    <script type="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/doc-scripts.js"></script>
   </body>
 </html>

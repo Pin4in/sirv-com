@@ -1,14 +1,13 @@
 .overflow
-    position: fixed
+  display: block
+  position: fixed
+  z-index: 1030
+  opacity: 0
+  margin-left: 0
+  background: rgba(0,0,0,.35)
+  +transition(all, .2s)
+  &.show
+    opacity: 1
+    width: 100%
+    height: 100%
     top: 0
-    right: 0
-    bottom: 0
-    left: 0
-    background: rgba(0,0,0,.35)
-    z-index: 1030
-    display: none
-    opacity: 0
-    +transition(all, .2s)
-    &.show
-        opacity: 1
-        display: block

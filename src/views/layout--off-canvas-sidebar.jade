@@ -3,9 +3,8 @@ html(lang='en')
   head
     include structure/head
 
-  body.has-transparent-header
-  
+  body.off-canvas-sidebar
     block content
-
+    .overflow
     include structure/scripts
-    script(type='text/javascript' src='scripts/scripts.js')
+    script(type='text/javascript' src='scripts/doc-scripts.js')

@@ -1,14 +1,15 @@
 extends ../layout--landing
 
 block content
-
-    .page-wrapper
+  .off-canvas-wrapper
+    .off-canvas-content
+      .page-wrapper
         include ../structure/header
         include ../modules/top-banner
         include ../modules/title-section
         include ../modules/partners
         include ../modules/features
         include ../modules/cta-btn
-        .container
-            include ../modules/cta-card
-    include ../modules/footer
+        include ../modules/cta-card
+      include ../structure/footer
+    include ../modules/off-canvas-menu

@@ -17,12 +17,12 @@
 
         var nav = $('.header');
         var fixedHeaderClass = 'header--fixed';
-
+        // var offCanvasContent = '.off-canvas-content'
         $(window).on('scroll' , function() {
 
             var scrolled = $(window).scrollTop();
+            console.log(scrolled);
             // navbar transparent to light
-
             if(scrolled > 100) {
                 classy.add(nav, fixedHeaderClass);
             }else {
@@ -32,28 +32,19 @@
 
         });
 
-        var mobileMenuToggle = $('.mobile-menu-toggle');
-        var menu = $('.header__nav-wrapper');
-        var mobileMenuActiveClass = 'open';
+        var offCanvasWrapper = $('.off-canvas-wrapper');
+        var offCanvasMenu = $('.off-canvas-menu');
+        var mobileMenuToggle =$('.mobile-menu-toggle');
+        var toggleMenuClass = 'on';
         var overflow = $('.overflow');
 
         $(mobileMenuToggle).on('click' , function() {
-            classy.toggle($(menu), mobileMenuActiveClass);
+            classy.toggle($(offCanvasWrapper), toggleMenuClass);
             $(overflow).toggleClass('show');
         });
 
-
-        var sidebaToggle = $('.sidebar-toggle');
-        var offcanvasSidebar = $('.page-wrapper--has-sidebar');
-
-        $(sidebaToggle).on('click' , function() {
-            classy.toggle($(offcanvasSidebar), 'on');
-            // $(overflow).toggleClass('show');
-        });
-
-
         $(overflow).on('click', function () {
-            classy.toggle($(menu), mobileMenuActiveClass);
+            classy.toggle($(offCanvasWrapper), toggleMenuClass);
             $(this).toggleClass('show');
         });
 

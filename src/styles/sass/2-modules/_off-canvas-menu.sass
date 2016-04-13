@@ -1,0 +1,62 @@
+.off-canvas
+  &-wrapper
+    position: absolute
+    height: 100%
+    width: 100%
+    &.on
+      // overflow: hidden
+      .off-canvas-content
+        margin-left: 21rem
+      .off-canvas-menu
+        left: 0
+
+  &-content
+    position: relative
+    margin-left: 0
+    width: 100%
+    z-index: 1
+    background: $white
+    +transition(margin-left, .2s)
+
+  &-menu
+    position: fixed
+    background-color: $white
+    height: 100%
+    left: -21rem
+    top: 0
+    width: 21rem
+    padding: 2rem 0
+    color: $menu-text-dark
+    +transition(left, .2s)
+
+    &-wrapper
+      overflow-y: auto
+      .nav-item
+        &.active
+          background: $menu-mobile-active-bg
+          // color: $menu-text-active
+          +plain-hover-focus
+            color: $menu-text-active
+        .btn
+          margin-left: 2rem
+          margin-bottom: .5rem
+
+      .nav-link
+        height: 2.2rem
+        line-height: 2.2rem
+        color: inherit
+        @include hover-focus
+          color: $menu-text-active
+        display: block
+        height: 2.5rem
+        line-height: 2.5rem
+        padding-left: 2.5rem
+        &:hover,
+        &:focus
+          background: $menu-mobile-hover-bg
+
+      .nav-divider
+        width: 100%
+        height: 1px
+        margin: 1.5rem 0
+        background: $menu-text-dark

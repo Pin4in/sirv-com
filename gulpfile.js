@@ -10,6 +10,7 @@ var newer = require('gulp-newer');
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var plumber = require('gulp-plumber');
+var imagemin = require('gulp-imagemin');
 
 // additional variables
 var files = require('./components-path.js');
@@ -43,6 +44,14 @@ function srcPath(arg) {
 
 // COMPILE my styles
 gulp.task('compile-sass', function() {
+    return sass('src/styles/sass/main.sass',{ style: 'expanded' })
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('build/styles'))
+        .pipe(reload({ stream:true }));
+});
+
+// COMPILE my styles in PRODUCTION
+gulp.task('compile-sass-production', function() {
     return sass('src/styles/sass/main.sass',{ style: 'compressed' })
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
@@ -53,6 +62,14 @@ gulp.task('compile-sass', function() {
 // COMPILE bootstrap theme
 gulp.task('compile-bootstrap-theme', function() {
     return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
+        .pipe(autoprefixer())
+        .pipe(gulp.dest('build/styles'))
+        .pipe(reload({ stream:true }));
+});
+
+// COMPILE bootstrap theme PRODUCTION
+gulp.task('compile-bootstrap-theme-production', function() {
+    return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'compressed' })
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({ stream:true }));
@@ -69,13 +86,21 @@ gulp.task('compile-jade', function(){
 });
 
 
+// // Uglyfy js
+// gulp.task('concat-js', function() {
+//     return gulp.src('src/scripts/*.js')
+//         .pipe(plumber())
+//         .pipe(concat('app.js'))
+//         .pipe(gulp.dest('build/scripts'))
+//         .pipe(reload({ stream:true }));
+// });
+
 // Uglyfy js
-gulp.task('concat-js', function() {
-    return gulp.src('src/scripts/*.js')
-        .pipe(plumber())
-        .pipe(concat('app.js'))
-        .pipe(gulp.dest('build/scripts'))
-        .pipe(reload({ stream:true }));
+gulp.task('uglify-js', function(){
+  gulp.src('src/scripts/*.js')
+  .pipe(uglify())
+  .pipe(gulp.dest('build/scripts'))
+  .pipe(reload({ stream:true }));
 });
 
 
@@ -98,15 +123,23 @@ gulp.task('style-components', function () {
     }));
 });
 
+// COMPRESS images
+gulp.task('compress-img', function () {
+  return gulp.src(srcPath('assets/**/*.{jpg,png}'), {base: './src/'})
+    .pipe(imagemin())
+    .pipe(gulp.dest('build'))
+});
+
+// COPY assets
 gulp.task('copy-assets', function () {
     return gulp.src(srcPath('assets/**/*.*'), {base:'./src/'})
         .pipe(gulp.dest('build'));
-})
+});
 
 // ======================================================================
 // watch Sass and Jade files for changes, run the preprocessor and reload
 // ======================================================================
-gulp.task('serve', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', 'style-components', 'js-components', 'concat-js', 'copy-assets'], function() {
+gulp.task('live', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', 'style-components', 'js-components', 'uglify-js', 'copy-assets'], function() {
     browserSync({
         server: {
             baseDir: 'build'
@@ -116,7 +149,7 @@ gulp.task('serve', ['compile-sass', 'compile-bootstrap-theme', 'compile-jade', '
 
     gulp.watch(['src/styles/sass/**/*.sass'] , ['compile-sass']);
     gulp.watch(['src/styles/bootstrap-theme/*{.sass,.scss}'] , ['compile-bootstrap-theme']);
-    gulp.watch(['src/scripts/*.js'] , ['concat-js']);
+    gulp.watch(['src/scripts/*.js'] , ['uglify-js']);
     gulp.watch(['**/*.jade'] , ['compile-jade']);
     gulp.watch(['*.html'] , {cwd: 'build'}).on('change', reload);
 });

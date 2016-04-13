@@ -1,175 +1,123 @@
 .header
-    color: $menu-text-dark
-    background: $header-background-color
-    +transition(padding, .2s)
-    border-bottom: 1px solid $border-grey
+  color: $menu-text-dark
+  background: $header-background-color
+  +transition(padding, .2s)
+  border-bottom: 1px solid $border-grey
+  position: fixed
+  width: 100%
+  top: 0
+  padding: 1.3rem 1rem
+  z-index: 1000
+
+  &--fixed
+    box-shadow: $header-shadow
+    padding: 1rem
+    .header__nav-wrapper
+      .nav-divider
+        background-color: $menu-text-dark
+
+  &__brand
+    display: flex
+    justify-content: space-between
+    width: 100%
+
+
+  &__nav-wrapper
+    display: none
+    align-items: center
+    +transition(left, .2s)
+    +media(lg)
+      display: flex
+
+
+
+  .nav
+    display: flex
+
+
+  .container
+    display: flex
+    justify-content: space-between
+
+  .mobile-menu-toggle,
+  .sidebar-toggle
+    display: block
+    float: right
+    border: 1px solid white
+    border-radius: .5rem
+    outline: none !important
+    padding: .2rem .7rem
+    background: transparent
+    font-size: 1.3rem
+    border-color: $blue
+    color: $blue
+
+
+  @media(min-width: #{map-get($grid-breakpoints, lg)})
+    position: fixed
+    width: 100%
+    top: 0
+    padding: 1.3rem 1rem
+    z-index: 1000
 
     &--fixed
-        .header__brand
-            background: $header-background-color
-            box-shadow: $header-shadow
+      box-shadow: $header-shadow
+      padding: 1rem
+      .header__nav-wrapper
+        .nav-divider
+          background-color: $menu-text-dark
 
 
     &__brand
-        width: 100%
-        position: fixed
-        top: 0
-        right: 0
-        left: 0
-        padding: 1.3rem 1rem
-        z-index: 1000
-
-
-    &__nav-wrapper
-        display: flex
-        align-items: center
-        +transition(left, .2s)
-
-        @media(max-width: #{map-get($grid-max-breakpoints, lg)})
-            position: fixed
-            left: -22rem
-            top: 0
-            bottom: 0
-            background: $white
-            box-shadow: $header-shadow-mobile
-            flex-direction: column
-            color: $menu-text-dark
-            width: 22rem
-            max-width: 70%
-            padding: 2rem 0
-            height: 100vh
-            overflow-y: auto
-            z-index: 1050
-            &.open
-                left: 0
+      position: static
+      width: auto
+      box-shadow: none !important
 
 
     .nav
-        display: flex
-        @media(max-width: #{map-get($grid-max-breakpoints, lg)})
-            flex-direction: column
-            width: 100%
-            &:first-child
-                order: 3
+      &-divider
+        width: 1px
+        height: 1.5rem
+        margin: 0 1.5rem
+        order: 0
 
-            .nav-item
-                &.active
-                    background: $menu-mobile-active-bg
-
-                .btn
-                    margin-left: 2rem
-                    margin-bottom: .5rem
-
-
-        &-divider
-            width: 100%
-            height: 1px
-            margin: 1.5rem 0
-            order: 2
-            background: $menu-text-dark
-
-
-        .nav-link
-            height: 2.2rem
-            line-height: 2.2rem
-            color: inherit
-            @include hover-focus
-                color: $menu-text-active
-            @media(max-width: #{map-get($grid-max-breakpoints, lg)})
-                display: block
-                height: 2.5rem
-                line-height: 2.5rem
-                padding-left: 2.5rem
-                &:hover,
-                &:focus
-                    background: $menu-mobile-hover-bg
-
-
-        .nav-item
-            &.active
-                +plain-hover-focus
-                    color: $menu-text-active
-
-
-    .container
-        display: flex
-        justify-content: space-between
+      .nav-item + .nav-item
+        margin-left: 1.5rem
 
 
     .mobile-menu-toggle,
     .sidebar-toggle
-        display: block
-        float: right
-        border: 1px solid white
-        border-radius: .5rem
-        outline: none !important
-        padding: .2rem .7rem
-        background: transparent
-        font-size: 1.3rem
-        border-color: $blue
-        color: $blue
-
-
-    @media(min-width: #{map-get($grid-breakpoints, lg)})
-        position: fixed
-        right: 0
-        left: 0
-        top: 0
-        padding: 1.3rem 1rem
-        z-index: 1000
-
-        &--fixed
-            box-shadow: $header-shadow
-            padding: 1rem
-            .header__nav-wrapper
-                .nav-divider
-                    background-color: $menu-text-dark
-
-
-        &__brand
-            position: static
-            width: auto
-            box-shadow: none !important
-            padding: 0
-
-
-        .nav
-            &-divider
-                width: 1px
-                height: 1.5rem
-                margin: 0 1.5rem
-                order: 0
-
-            .nav-item + .nav-item
-                margin-left: 1.5rem
-
-
-        .mobile-menu-toggle,
-        .sidebar-toggle
-            display: none
+      display: none
 
 
 .has-transparent-header
-    .header
-        background-color: transparent
-        color: white
-        border: 0
+  .header
+    background-color: transparent
+    color: white
+    border: 0
 
-        @media(min-width: #{map-get($grid-breakpoints, lg)})
-            .header__nav-wrapper
-                .nav-divider
-                    background: $white
+    @media(min-width: #{map-get($grid-breakpoints, lg)})
+      .header__nav-wrapper
+        .nav-divider
+          background: $white
+    &__brand
+      background: transparent
+      border-bottom-width: 0
 
-        &--fixed
-            background: $header-background-color
-            color: $menu-text-dark
-            .mobile-menu-toggle,
-            .sidebar-toggle
-                border-color: $blue
-                color: $blue
+    &--fixed
+      background: $header-background-color
+      color: $menu-text-dark
+      .mobile-menu-toggle,
+      .sidebar-toggle
+        border-color: $blue
+        color: $blue
+      .header__brand
+        background: $header-background-color
+        @media(max-width: #{map-get($grid-max-breakpoints, lg)})
+          border-bottom-width: 1px
 
 
-        .mobile-menu-toggle,
-        .sidebar-toggle
-            border-color: $blue
-            color: $blue
+    .mobile-menu-toggle,
+    .sidebar-toggle
+      border-color: $blue
+      color: $blue

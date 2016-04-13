@@ -1,8 +1,8 @@
 mixin newArticle(title, newId)
-    article(class="article", id=newId)
-        header 
-            h2= title
-            if block
-                block
-            else
-                p No content provided
+  article(class="article", id=newId)
+    header 
+      h2= title
+      if block
+        block
+      else
+        p No content provided
