@@ -88,7 +88,6 @@ hr {
   overflow: hidden;
   width: 100%;
   position: absolute;
-  height: 100%;
 }
 
 .off-canvas-sidebar .content-wrapper {
@@ -903,7 +902,7 @@ label + .select-wrapper .form-control {
   display: block;
 }
 
-.sidebar .nav-link:hover {
+.sidebar .nav-link.active, .sidebar .nav-link:hover {
   border-radius: .5rem;
   background: #ecf3f8;
 }

@@ -30,5 +30,11 @@
             $(this).toggleClass('show');
         });
 
+        var scrollspy = '#articles-scrollspy';
+        var scrollspyNav = '#scrollspy-nav';
+
+        $(scrollspy).scrollspy({ target: scrollspyNav,
+                         offset: 80 });
+
   }
 )();

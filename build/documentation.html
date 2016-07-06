@@ -46,29 +46,29 @@
           </div>
         </div>
       </div>
-      <aside class="sidebar">
+      <aside id="scrollspy-nav" class="sidebar">
         <div class="sidebar-container">
           <form class="sidebar__search"><i class="fa fa-search"></i>
             <input type="email" placeholder="search the knowledge base" class="form-control">
           </form>
           <p class="sidebar__title">In this article:</p>
-          <div class="nav">
-            <div class="nav-item"><a href="#a1" class="nav-link">Before you start</a></div>
-            <div class="nav-item nav-item--has-subnav"><a onclick="$('#options').collapse('toggle')" href="#a2" class="nav-link">Options</a>
-              <div id="options" class="nav collapse"> <a href="#a3" class="nav-link">URL format</a>
+          <ul class="nav">
+            <li class="nav-item"><a href="#spy-before-start" class="nav-link">Before you start</a></li>
+            <li class="nav-item nav-item--has-subnav"><a onclick="$('#options').collapse('toggle')" href="#a2" class="nav-link">Options</a>
+              <div id="options" class="nav collapse"> <a href="#spy-url-format" class="nav-link">URL format</a>
                 <div class="nav-item nav-item--has-subnav"><a data-toggle="collapse" href="#scale" aria-expanded="false" class="nav-link">Scale</a>
                   <div id="scale" class="nav collapse"><a href="#" class="nav-link">Scale options</a><a href="#" class="nav-link">One more option</a></div>
                 </div><a href="#" class="nav-link">Rotate</a>
               </div>
-            </div>
-            <div class="nav-item"><a href="#" class="nav-link">Table of options</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Color</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Profile</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">URL errors</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Special characters</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Retina support</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Caching & deletion</a></div>
-          </div>
+            </li>
+            <li class="nav-item"><a href="#spy-table-of-options" class="nav-link">Table of options</a></li>
+            <li class="nav-item"><a href="#spy-color" class="nav-link">Color</a></li>
+            <li class="nav-item"><a href="#spy-profile" class="nav-link">Profile</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">URL errors</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Special characters</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Retina support</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Caching & deletion</a></li>
+          </ul>
         </div>
       </aside>
       <main data-spy="scroll" data-target=".sidebar" class="content-wrapper">

@@ -1,33 +1,33 @@
-aside.sidebar
+aside.sidebar#scrollspy-nav
     .sidebar-container
         form.sidebar__search
             i.fa.fa-search
             input.form-control(type="email" placeholder="search the knowledge base")
         p.sidebar__title In this article:
-        .nav
-            .nav-item
-                a.nav-link(href="#a1") Before you start
-            .nav-item.nav-item--has-subnav
+        ul.nav
+            li.nav-item
+                a.nav-link(href="#spy-before-start") Before you start
+            li.nav-item.nav-item--has-subnav
                 a.nav-link(onclick="$('#options').collapse('toggle')" href="#a2") Options
                 #options.nav.collapse 
-                    a.nav-link(href="#a3") URL format
+                    a.nav-link(href="#spy-url-format") URL format
                     .nav-item.nav-item--has-subnav
                         a.nav-link(data-toggle="collapse" href="#scale" aria-expanded="false") Scale
                         #scale.nav.collapse
                             a.nav-link(href="#") Scale options
                             a.nav-link(href="#") One more option
                     a.nav-link(href="#") Rotate
-            .nav-item
-                a.nav-link(href="#") Table of options
-            .nav-item
-                a.nav-link(href="#") Color
-            .nav-item
-                a.nav-link(href="#") Profile
-            .nav-item
+            li.nav-item
+                a.nav-link(href="#spy-table-of-options") Table of options
+            li.nav-item
+                a.nav-link(href="#spy-color") Color
+            li.nav-item
+                a.nav-link(href="#spy-profile") Profile
+            li.nav-item
                 a.nav-link(href="#") URL errors
-            .nav-item
+            li.nav-item
                 a.nav-link(href="#") Special characters
-            .nav-item
+            li.nav-item
                 a.nav-link(href="#") Retina support
-            .nav-item
+            li.nav-item
                 a.nav-link(href="#") Caching & deletion
