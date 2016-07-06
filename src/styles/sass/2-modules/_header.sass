@@ -33,7 +33,41 @@
 
   .nav
     display: flex
+    @media(max-width: #{map-get($grid-max-breakpoints, lg)})
+      flex-direction: column
+      width: 100%
+      &:first-child
+        order: 3
 
+        .nav-item
+          &.active
+            background: $menu-mobile-active-bg
+
+          .btn
+            margin-left: 2rem
+            margin-bottom: .5rem
+
+
+    &-divider
+        width: 100%
+        height: 1px
+        margin: 1.5rem 0
+        order: 2
+        background: $menu-text-dark
+
+
+    .nav-link
+      height: 2.2rem
+      line-height: 2.2rem
+      color: inherit
+      @include hover-focus
+        color: $menu-text-active
+
+
+    .nav-item
+      &.active
+        +plain-hover-focus
+          color: $menu-text-active
 
   .container
     display: flex

@@ -413,6 +413,55 @@ label + .select-wrapper .form-control {
   display: flex;
 }
 
+@media (max-width: 991px) {
+  .header .nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .header .nav:first-child {
+    -webkit-box-ordinal-group: 4;
+    -webkit-order: 3;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .header .nav:first-child .nav-item.active {
+    background: rgba(210, 210, 210, 0.8);
+  }
+  .header .nav:first-child .nav-item .btn {
+    margin-left: 2rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.header .nav-divider {
+  width: 100%;
+  height: 1px;
+  margin: 1.5rem 0;
+  -webkit-box-ordinal-group: 3;
+  -webkit-order: 2;
+      -ms-flex-order: 2;
+          order: 2;
+  background: #adadad;
+}
+
+.header .nav .nav-link {
+  height: 2.2rem;
+  line-height: 2.2rem;
+  color: inherit;
+}
+
+.header .nav .nav-link:focus, .header .nav .nav-link:hover {
+  color: #535454;
+}
+
+.header .nav .nav-item.active, .header .nav .nav-item.active:focus, .header .nav .nav-item.active:hover {
+  color: #535454;
+}
+
 .header .container {
   display: -webkit-box;
   display: -webkit-flex;
