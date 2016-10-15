@@ -32,23 +32,34 @@
             left: .75rem
 
 
-    .nav-item
-        &--has-subnav
-            & > .nav
-                padding-left: $sidebar-items-shift-1
-                .nav-link
-                    // display: inline-block
-                    color: $sidebar-subnav-color
-                    &:first-child
-                        padding-top: .5rem
-                    &:last-child
-                        padding-bottom: .5rem
+    .dropdown-menu
+        position: static
 
-    .nav-link
+        margin: 0
+        padding: 0 0 0 $sidebar-items-shift-1
+
+        border: 0
+        border-radius: 0
+
+        background: transparent
+
+        float: none
+
+        .dropdown-item
+            // display: inline-block
+            color: $sidebar-subnav-color
+            &:first-child
+                padding-top: .5rem
+            &:last-child
+                padding-bottom: .5rem
+
+    .nav-link,
+    .dropdown-item
         color: $sidebar-nav-color
         padding: .25rem 1rem
         font-size: 1.1rem
         display: block
+        &.active,
         &:hover
             border-radius: .5rem
             background: $sidebar-items-background
@@ -56,3 +67,5 @@
         .nav-link
             &:before
                 content: "- "
+    .activate-dropdown-toggle
+        display: none

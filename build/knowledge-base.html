@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles/sirv-theme.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
-  <body class="off-canvas-sidebar">
+  <body id="articles-scrollspy" class="off-canvas-sidebar"> 
     <div class="page-wrapper">
       <div class="header header--wide">
         <div class="container">
@@ -52,33 +52,35 @@
             <input type="email" placeholder="search the knowledge base" class="form-control">
           </form>
           <p class="sidebar__title">In this article:</p>
-          <div class="nav">
-            <div class="nav-item"><a href="#a1" class="nav-link">Before you start</a></div>
-            <div class="nav-item nav-item--has-subnav"><a onclick="$('#options').collapse('toggle')" href="#a2" class="nav-link">Options</a>
-              <div id="options" class="nav collapse"> <a href="#a3" class="nav-link">URL format</a>
-                <div class="nav-item nav-item--has-subnav"><a data-toggle="collapse" href="#scale" aria-expanded="false" class="nav-link">Scale</a>
-                  <div id="scale" class="nav collapse"><a href="#" class="nav-link">Scale options</a><a href="#" class="nav-link">One more option</a></div>
-                </div><a href="#" class="nav-link">Rotate</a>
-              </div>
-            </div>
-            <div class="nav-item"><a href="#" class="nav-link">Table of options</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Color</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Profile</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">URL errors</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Special characters</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Retina support</a></div>
-            <div class="nav-item"><a href="#" class="nav-link">Caching & deletion</a></div>
+          <div id="scrollspy-nav">
+            <ul class="nav sidebar-nav sidebar-dropdown-control">
+              <li class="nav-item"><a href="#spy-before-start" class="nav-link">Before you start</a></li>
+              <li class="nav-item dropdown"><a data-toggle="dropdown" href="" data-link="#spy-options" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Options</a>
+                <div class="dropdown-menu"> <a href="#spy-options" class="dropdown-item activate-dropdown-toggle"></a><a href="#spy-url-format" class="dropdown-item">URL format</a>
+                  <div class="nav-item dropdown"><a data-toggle="dropdown" href="" data-link="#spy-scale" role="button" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Scale</a>
+                    <div class="dropdown-menu"><a href="#spy-scale" class="dropdown-item activate-dropdown-toggle"></a><a href="#spy-scale-options" class="nav-link dropdown-item">Scale options</a><a href="#spy-scale-another option" class="nav-link dropdown-item">Scale another option</a></div><a href="#spy-rotate" class="dropdown-item">Rotate</a>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item"><a href="#spy-table-of-options" class="nav-link">Table of options</a></li>
+              <li class="nav-item"><a href="#spy-color" class="nav-link">Color</a></li>
+              <li class="nav-item"><a href="#spy-profile" class="nav-link">Profile</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">URL errors</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Special characters</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Retina support</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Caching & deletion</a></li>
+            </ul>
           </div>
         </div>
       </aside>
       <main class="content-wrapper">
-        <div class="content-container">         
-          <div class="post-title">
-            <h1>How to add hotspots on a 360 spin</h1>
-            <p class="post-meta">Created:<span>21st August 2015  /</span>Author: <span>Johnny Black</span></p>
-          </div>
-          <hr>
-          <article class="article">
+        <div class="post-title">
+          <h1>How to add hotspots on a 360 spin</h1>
+          <p class="post-meta">Created:<span>21st August 2015  /</span>Author: <span>Johnny Black</span></p>
+        </div>
+        <hr>
+        <div class="articles-wrapper">
+          <article id="spy-before-start" class="article">
             <header> 
               <h2>Before you started</h2>
               <p>The bigger your original image, the more options you’ll have.<br>For best results, upload images of:</p>
@@ -88,30 +90,72 @@
               </ul>
               <p>Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality <a href="#">Sirv Zooms</a>  and permit glorious clarity on hi-res screens.</p>
               <p>For more tips, read <a href="#">Getting started with Sirv</a>. For help, <a href="#">contact Sirv support</a> from your control panel.</p>
-              <article class="article">
-                <header> 
-                  <h2>Options</h2>
-                  <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
-                </header>
-              </article>
-              <article class="article">
-                <header> 
-                  <h2>URL format</h2>
-                  <p>New images are created by appending options in your image URL.<br>Here is an image without any options:</p>
-                  <div class="code">
-                    <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg</code></pre>
-                  </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg">
-                  <p>Here is the same image scaled to 300px (notice the URL):</p>
-                  <div class="code">
-                    <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300</code></pre>
-                  </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
-                  <p>Pixel values are referenced using the number only. For percentage values, always use the ‘<span class="bold">%</span>‘ sign, eg: 40%.<br>Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘<span class="bold">&</span>‘ character:</p>
-                  <div class="code">
-                    <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two</code></pre>
-                  </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&amp;colortone=texas&amp;frame.style=mirror&amp;text.text=%C2%A9Steve%20Wilson&amp;text.size=40%&amp;text.color=white&amp;text.position=northeast&amp;text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
-                  <p>Options can be saved in a <a href="#">profile</a>, which is perfect if you’re applying the same options to many images.</p>
-                </header>
-              </article>
+            </header>
+          </article>
+          <article id="spy-options" class="article">
+            <header> 
+              <h2>Options</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-url-format" class="article">
+            <header> 
+              <h2>URL format</h2>
+              <p>New images are created by appending options in your image URL.<br>Here is an image without any options:</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg" width="500" height="333" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Here is the same image scaled to 300px (notice the URL):</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Pixel values are referenced using the number only. For percentage values, always use the ‘<span class="bold">%</span>‘ sign, eg: 40%.<br>Here is the same image with lots more options – note that multiple parameters in the URL are separated by the ‘<span class="bold">&</span>‘ character:</p>
+              <div class="code">
+                <pre><code class="hljs nohighlight">//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&colortone=texas&frame.style=mirror&text.text=%C2%A9Steve%20Wilson&text.size=40%&text.color=white&text.position=northeast&text.font.family=Shadows%20Into%20Light%20Two</code></pre>
+              </div><img src="//test1.sirv.com/blog-brno-harvest-kolache-032.jpg?scale.width=300&amp;colortone=texas&amp;frame.style=mirror&amp;text.text=%C2%A9Steve%20Wilson&amp;text.size=40%&amp;text.color=white&amp;text.position=northeast&amp;text.font.family=Shadows%20Into%20Light%20Two" width="300" height="200" alt="blog-brno-harvest-kolache-032.jpg">
+              <p>Options can be saved in a <a href="#">profile</a>, which is perfect if you’re applying the same options to many images.</p>
+            </header>
+          </article>
+          <article id="spy-scale" class="article">
+            <header> 
+              <h2>Scale</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-scale-options" class="article">
+            <header> 
+              <h2>Scale options</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-scale-another option" class="article">
+            <header> 
+              <h2>Scale another option</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-rotate" class="article">
+            <header> 
+              <h2>Rotate</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-table-of-options" class="article">
+            <header> 
+              <h2>Table of options</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-color" class="article">
+            <header> 
+              <h2>Color</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
+            </header>
+          </article>
+          <article id="spy-profile" class="article">
+            <header> 
+              <h2>Profile</h2>
+              <p>Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the <a href="#">Table of Options</a> lists all 60 options.</p>
             </header>
           </article>
         </div>

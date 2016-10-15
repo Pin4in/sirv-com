@@ -9,16 +9,17 @@ mixin htmlEscape()
 //- include article mixin to generate content
 include ../modules/article
 
-//- basic layout
-extends ../layout--off-canvas-sidebar
+doctype html
+html(lang='en')
+  head
+    include ../structure/head
 
-
-block content
-  .page-wrapper
-    include ../structure/header--off-canvas-sidebar
-    include ../modules/sidebar
-    main.content-wrapper
-      .content-container          
+  body.off-canvas-sidebar#articles-scrollspy  
+    .page-wrapper
+      include ../structure/header--off-canvas-sidebar
+      include ../modules/sidebar-knowledge
+      main.content-wrapper
+                  
         .post-title
           h1 How to add hotspots on a 360 spin
           p.post-meta
@@ -28,30 +29,31 @@ block content
             span Johnny Black
         hr
 
-        +newArticle('Before you started')
-          p The bigger your original image, the more options you’ll have.
-            br
-            | For best results, upload images of:
-          ul.success-list
-            li At least 2500px width
-            li if JPEG, 92% to 96% quality
-          p Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality 
-            a(href="#") Sirv Zooms
-            |   and permit glorious clarity on hi-res screens.
-          p For more tips, read 
-            a(href="#") Getting started with Sirv
-            |. For help, 
-            a(href="#") contact Sirv support
-            |  from your control panel.
+        .articles-wrapper
+          +newArticle('Before you started', 'spy-before-start')
+            p The bigger your original image, the more options you’ll have.
+              br
+              | For best results, upload images of:
+            ul.success-list
+              li At least 2500px width
+              li if JPEG, 92% to 96% quality
+            p Sirv works with any image, regardless of type, size or quality. It automatically resizes and optimizes your images according to the users device. By uploading big, high quality images, you’ll ensure that Sirv always delivers superb quality 
+              a(href="#") Sirv Zooms
+              |   and permit glorious clarity on hi-res screens.
+            p For more tips, read 
+              a(href="#") Getting started with Sirv
+              |. For help, 
+              a(href="#") contact Sirv support
+              |  from your control panel.
 
-          
-          +newArticle('Options')
+            
+          +newArticle('Options', 'spy-options')
             p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
               a(href="#") Table of Options
               |  lists all 60 options.
           
           
-          +newArticle('URL format')
+          +newArticle('URL format', 'spy-url-format')
             p New images are created by appending options in your image URL.
               br
               | Here is an image without any options:
@@ -90,3 +92,35 @@ block content
               a(href="#") profile
               |, which is perfect if you’re applying the same options to many images.
       
+
+          +newArticle('Scale', 'spy-scale')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Scale options', 'spy-scale-options')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Scale another option', 'spy-scale-another option')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Rotate', 'spy-rotate')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Table of options', 'spy-table-of-options')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Color', 'spy-color')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+          +newArticle('Profile', 'spy-profile')
+            p Output your images at any size in a split second. It’s simple and each of the options are explained below. For quick reference, the 
+              a(href="#") Table of Options
+              |  lists all 60 options.
+    .overflow
+    include ../structure/scripts
+    script(type='text/javascript' src='scripts/doc-scripts.js')

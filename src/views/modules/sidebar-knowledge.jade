@@ -1,0 +1,37 @@
+aside.sidebar
+    .sidebar-container
+        form.sidebar__search
+            i.fa.fa-search
+            input.form-control(type="email" placeholder="search the knowledge base")
+        p.sidebar__title In this article:
+        #scrollspy-nav
+            ul.nav.sidebar-nav.sidebar-dropdown-control
+                li.nav-item
+                    a.nav-link(href="#spy-before-start") Before you start
+                li.nav-item.dropdown
+                    a.nav-link.dropdown-toggle(data-toggle="dropdown" href="" data-link="#spy-options" role="button" aria-haspopup="true" aria-expanded="false") Options
+                    .dropdown-menu 
+                        a.dropdown-item.activate-dropdown-toggle(href="#spy-options")
+                        a.dropdown-item(href="#spy-url-format") URL format
+                        //- a.nav-link.dropdown-item(href="#spy-scale") Scale
+                        .nav-item.dropdown
+                            a.nav-link.dropdown-toggle(data-toggle="dropdown" href="" data-link="#spy-scale" role="button" aria-haspopup="true" aria-expanded="false" ) Scale
+                            .dropdown-menu
+                                a.dropdown-item.activate-dropdown-toggle(href="#spy-scale")
+                                a.nav-link.dropdown-item(href="#spy-scale-options") Scale options
+                                a.nav-link.dropdown-item(href="#spy-scale-another option") Scale another option
+                            a.dropdown-item(href="#spy-rotate") Rotate
+                li.nav-item
+                    a.nav-link(href="#spy-table-of-options") Table of options
+                li.nav-item
+                    a.nav-link(href="#spy-color") Color
+                li.nav-item
+                    a.nav-link(href="#spy-profile") Profile
+                li.nav-item
+                    a.nav-link(href="#") URL errors
+                li.nav-item
+                    a.nav-link(href="#") Special characters
+                li.nav-item
+                    a.nav-link(href="#") Retina support
+                li.nav-item
+                    a.nav-link(href="#") Caching & deletion

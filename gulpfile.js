@@ -1,6 +1,7 @@
 // DEPENDENCIES
 var gulp = require('gulp');
-var sass = require('gulp-ruby-sass');
+var sass = require('gulp-sass');
+// var sass = require('gulp-ruby-sass');
 var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var autoprefixer = require('gulp-autoprefixer');
@@ -44,36 +45,68 @@ function srcPath(arg) {
 
 // COMPILE my styles
 gulp.task('compile-sass', function() {
-    return sass('src/styles/sass/main.sass',{ style: 'expanded' })
+    return gulp.src('src/styles/sass/main.sass')
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({ stream:true }));
 });
+// // COMPILE my styles
+// gulp.task('compile-sass', function() {
+//     return sass('src/styles/sass/main.sass',{ style: 'expanded' })
+//         .pipe(autoprefixer())
+//         .pipe(gulp.dest('build/styles'))
+//         .pipe(reload({ stream:true }));
+// });
+
 
 // COMPILE my styles in PRODUCTION
 gulp.task('compile-sass-production', function() {
-    return sass('src/styles/sass/main.sass',{ style: 'compressed' })
+    return gulp.src('src/styles/sass/main.sass')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({ stream:true }));
 });
-
+// // COMPILE my styles in PRODUCTION
+// gulp.task('compile-sass-production', function() {
+//     return sass('src/styles/sass/main.sass',{ style: 'compressed' })
+//         .pipe(autoprefixer())
+//         .pipe(gulp.dest('build/styles'))
+//         .pipe(reload({ stream:true }));
+// });
 
 // COMPILE bootstrap theme
 gulp.task('compile-bootstrap-theme', function() {
-    return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
+    return gulp.src('src/styles/bootstrap-theme/sirv-theme.sass')
+        .pipe(sass({ outputStyle: 'expanded' }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({ stream:true }));
 });
+// // COMPILE bootstrap theme
+// gulp.task('compile-bootstrap-theme', function() {
+//     return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'expanded' })
+//         .pipe(autoprefixer())
+//         .pipe(gulp.dest('build/styles'))
+//         .pipe(reload({ stream:true }));
+// });
 
 // COMPILE bootstrap theme PRODUCTION
 gulp.task('compile-bootstrap-theme-production', function() {
-    return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'compressed' })
+    return gulp.src('src/styles/bootstrap-theme/sirv-theme.sass')
+        .pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
         .pipe(autoprefixer())
         .pipe(gulp.dest('build/styles'))
         .pipe(reload({ stream:true }));
 });
+// // COMPILE bootstrap theme PRODUCTION
+// gulp.task('compile-bootstrap-theme-production', function() {
+//     return sass('src/styles/bootstrap-theme/sirv-theme.sass',{ style: 'compressed' })
+//         .pipe(autoprefixer())
+//         .pipe(gulp.dest('build/styles'))
+//         .pipe(reload({ stream:true }));
+// });
 
 
 // COMPYLE jade
@@ -98,6 +131,7 @@ gulp.task('compile-jade', function(){
 // Uglyfy js
 gulp.task('uglify-js', function(){
   gulp.src('src/scripts/*.js')
+  .pipe(plumber())
   .pipe(uglify())
   .pipe(gulp.dest('build/scripts'))
   .pipe(reload({ stream:true }));
