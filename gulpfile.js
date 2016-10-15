@@ -131,6 +131,7 @@ gulp.task('compile-jade', function(){
 // Uglyfy js
 gulp.task('uglify-js', function(){
   gulp.src('src/scripts/*.js')
+  .pipe(plumber())
   .pipe(uglify())
   .pipe(gulp.dest('build/scripts'))
   .pipe(reload({ stream:true }));
